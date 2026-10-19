@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import { img } from '../lib/images';
+
+interface Props {
+  title: string;
+  category?: string | null;
+  image?: string;
+  description: string[];
+  id?: string;
+  headingLevel?: 'h2' | 'h3';
+}
+const { title, category, image, description, id, headingLevel = 'h3' } = Astro.props;
+const H = headingLevel;
+---
+
+<article class:list={["work", { "has-art": image }]} id={id}>
+  {image && <Image class="art" src={img(image)} alt="" widths={[400, 800]} sizes="(min-width: 760px) 320px, 100vw" />}
+  <div class="body">
+    {category && <span class="eyebrow">{category}</span>}
+    <H class="title">{title}</H>
+    {description.map((p) => <p set:html={p} />)}
+    <slot />
+  </div>
+</article>
+
+<style>
+  .work {
+    display: grid;
+    gap: 20px 36px;
+    padding-block: 36px;
+    border-top: 1px solid var(--line);
+  }
+  @media (min-width: 760px) {
+    .work.has-art {
+      grid-template-columns: 320px 1fr;
+      align-items: start;
+    }
+  }
+  .art {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background: var(--paper-2);
+  }
+  .title {
+    font-size: var(--step-2);
+  }
+  .body {
+    max-width: var(--measure);
+  }
+  .body > :global(p:last-of-type) {
+    margin-bottom: 0;
+  }
+</style>

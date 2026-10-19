@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+import WorkCard from '../../components/WorkCard.astro';
+import content from '../../data/content.json';
+import { slug, hamsaPdf } from '../../lib/site';
+import { link } from '../../lib/url';
+
+const { home } = content;
+const groups = [...new Set(home.books.map((b) => b.category))];
+---
+
+<Base title="Works" description="The works of Pandit Duraiswami Aiyangar: Ayurveda, Sanskrit literature and general books, with the Hamsa Sandesham English translation to read and download.">
+  <section class="page-head wrap">
+    <span class="eyebrow">Works of Pandit Duraiswami Aiyangar</span>
+    <h1>Works</h1>
+  </section>
+
+  <section class="wrap">
+    <h2 class="group">English translation</h2>
+    <WorkCard title="Hamsa Sandesham (English Translation)" id="hamsa-sandesham" headingLevel="h3" description={[]}>
+      <p class="tp">{hamsaPdf.titlePage.map((l) => <span>{l}</span>)}</p>
+      <p>English translation by {hamsaPdf.translator}. PDF, {hamsaPdf.pages} pages, {hamsaPdf.size}.</p>
+      <div class="actions">
+        <a class="btn solid" href={link('/works/hamsa-sandesham/')}>Read online</a>
+        <a class="btn" href={link(hamsaPdf.href)} download>Download PDF</a>
+      </div>
+    </WorkCard>
+
+    {groups.map((g) => (
+      <>
+        <h2 class="group">{g}</h2>
+        {home.books.filter((b) => b.category === g).map((b) => (
+          <WorkCard title={b.title} image={b.image} description={b.description} id={slug(b.title)} />
+        ))}
+      </>
+    ))}
+  </section>
+</Base>
+
+<style>
+  .tp span {
+    display: block;
+  }
+  .tp span:first-child {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    letter-spacing: 0.06em;
+  }
+  .group {
+    margin-top: clamp(40px, 6vw, 72px);
+    font-size: var(--step--1);
+    font-family: var(--font-body);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+</style>

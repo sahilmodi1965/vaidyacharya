@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import content from '../../data/content.json';
+import { titleCase } from '../../lib/site';
+import { img } from '../../lib/images';
+
+const { about } = content;
+---
+
+<Base title="About" description={about.story[0].replace(/<[^>]+>/g, '')}>
+  <section class="page-head wrap">
+    <span class="eyebrow">About the Trust</span>
+    <h1>{about.storyHeading}</h1>
+  </section>
+
+  <section class="wrap prose story">
+    {about.story.map((p) => <p set:html={p} />)}
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{about.trusteesHeading}</h2>
+      {about.trustees.map((t) => (
+        <article class="person">
+          <Image class="photo" src={img(t.photo)} alt={`Photo of ${titleCase(t.name)}`} widths={[240, 480]} sizes="240px" />
+          <div class="prose">
+            <h3>{titleCase(t.name)}</h3>
+            {t.bio.map((p) => <p set:html={p} />)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap prose">
+      <h2>{about.contributorsHeading}</h2>
+      {about.contributors.map((p) => <p set:html={p} />)}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .story {
+    padding-bottom: clamp(32px, 6vw, 64px);
+  }
+  .person {
+    display: grid;
+    gap: 20px 40px;
+    padding-block: 32px;
+    border-top: 1px solid var(--line);
+  }
+  @media (min-width: 760px) {
+    .person {
+      grid-template-columns: 240px 1fr;
+      align-items: start;
+    }
+  }
+  .photo {
+    width: 240px;
+    max-width: 70%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+</style>

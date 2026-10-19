@@ -1,0 +1,189 @@
+@import '@fontsource-variable/fraunces';
+@import '@fontsource-variable/source-serif-4';
+@import '@fontsource-variable/source-serif-4/wght-italic.css';
+
+:root {
+  --ink: #2a221c;
+  --muted: #625649;
+  --paper: #f6f1e7;
+  --paper-2: #eee6d6;
+  --card: #fbf8f2;
+  --line: #ddd2bf;
+  --accent: #8c3b1e; /* madder red, AA on paper */
+  --accent-2: #a8742a; /* turmeric, decorative only */
+
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Source Serif 4 Variable', 'Iowan Old Style', Georgia, serif;
+
+  --step--1: clamp(0.88rem, 0.86rem + 0.1vw, 0.94rem);
+  --step-0: clamp(1.06rem, 1.02rem + 0.2vw, 1.18rem);
+  --step-1: clamp(1.2rem, 1.12rem + 0.4vw, 1.4rem);
+  --step-2: clamp(1.45rem, 1.3rem + 0.8vw, 1.9rem);
+  --step-3: clamp(1.8rem, 1.5rem + 1.6vw, 2.7rem);
+  --step-4: clamp(2.2rem, 1.7rem + 2.6vw, 3.6rem);
+
+  --measure: 68ch;
+  --wrap: 1120px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --radius: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  margin: 0 0 0.5em;
+}
+h1 {
+  font-size: var(--step-4);
+}
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-2);
+}
+
+p {
+  margin: 0 0 1.1em;
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.wrap {
+  width: min(100% - 2 * var(--gutter), var(--wrap));
+  margin-inline: auto;
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 0.6em;
+  font-size: var(--step--1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section {
+  padding-block: clamp(48px, 8vw, 96px);
+}
+.section + .section {
+  border-top: 1px solid var(--line);
+}
+
+.page-head {
+  padding-block: clamp(40px, 7vw, 80px) clamp(16px, 3vw, 32px);
+}
+.page-head p {
+  color: var(--muted);
+  max-width: var(--measure);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.15em;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent);
+  background: transparent;
+}
+.btn:hover {
+  background: var(--accent);
+  color: var(--paper);
+}
+.btn.solid {
+  background: var(--accent);
+  color: var(--paper);
+}
+.btn.solid:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.verse {
+  margin: 1.8em 0;
+  padding: 0.2em 0 0.2em 1.2em;
+  border-left: 2px solid var(--accent-2);
+  font-style: italic;
+  font-size: var(--step-1);
+  line-height: 1.6;
+}
+.verse p {
+  margin: 0;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 10;
+  padding: 8px 14px;
+  background: var(--ink);
+  color: var(--paper);
+}

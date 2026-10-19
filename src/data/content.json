@@ -1,0 +1,223 @@
+{
+  "home": {
+    "portrait": "Pandit-Duraiswami-Aiyangar.jpg",
+    "heading": "Pandit Duraiswami aiyangar (1883 -1956)",
+    "titles": [
+      "Ayurvedacharya",
+      "Ayurveda Bhushan",
+      "Chief Physician-in-charge, K.P.D. Ayurvedic Hospital",
+      "Diplomad Ayurvedic Medical Practioner",
+      "Editor of Vaiydya Kalannidhi - the Tamil Medical Journal",
+      "Examiner Oriental title Examinations, Madras University",
+      "Examiner-the All-India Ayurveda Vidya Pitha and Madras Government School of Indian Medicine",
+      "Lecturer, the Madras Ayurvedic College",
+      "Pandit",
+      "Physician SKPD Hospital, Madras Sri Desika Dashana Dhurandhara",
+      "President, All India Ayurveda Mahamana",
+      "Vaidyarathna",
+      "Vidyapitha"
+    ],
+    "welcome": [
+      "An Ayurvedic doctor more holistic healer than medicine man, a Sanskrit scholar who spoke the ancient tongue with ease, a polyglot who juggled languages with abandon, a commentator and translator who made our heritage available to the common man, a teacher who imparted knowledge with passion, an ardent lover of literature and the fine arts, a devout explorer in the realms of Sanatana dharma, a man of letters, a poet, an actor, a polymath, a titan. He was Pandit Duraiswami Aiyangar. To know about him is to acknowledge and understand the breadth and depth of the human potential we all possess, but only the rarest of rare are destined to maximize.",
+      "A peep into his life reveals the ingredients that went towards the making of this man. His was a saga of deprivation, struggles, and hardships almost from infancy. Yet, armed with nothing but his own grit and resolve, this orphan from an unknown village transformed his life into an inspirational journey sprinkled with innumerable milestones. That’s because this immensely optimistic genius never viewed problems as pitfalls. He only saw every hardship as a challenge to be overcome. And while chance seemed to play an immense role in his evolution, one can never overlook his complete dedication, immense discipline, and single-minded focus at whatever task he undertook.",
+      "And then there was his unquenchable thirst for knowledge. His was a voyage into the unknown, following “knowledge like a sinking star, to the utmost bound of human thought.” (Ulysses, Alfred Lord Tennyson). Nothing was too insignificant, nothing too magnificent. If he met an idea, he had to befriend it, follow it through its labyrinthine course, until he reached a destination that satisfied him. Hence whether it was the sciences or humanities, music or philosophy, all were grist for Pandit Duraiswami’s mill. And he pounced on each new thought with the glee of a child.",
+      "Along with these were the human contradictions that made him so interesting. He was steeped in ancient scriptures and the study of Sanskrit. Yet all by himself he learned, read, and wrote in English with immense ease. He was a staunch exponent of Ayurveda, yet often consulted Allopathic doctors and had a very amicable relationship with them. Extravagant in his dreams, he was frugality itself in daily life.",
+      "But through all of this, what radiated was an intellect that blazed forth like the ancients, a character wedded to learning, a life dedicated to exploration. The entire universe of ideas was his stage and when he ascended it, he played every part to perfection.",
+      "He was an unsung, unheralded hero. Of such as him, Thomas Gray, in the poem, Elegy Written in a Country Churchyard had said,"
+    ],
+    "verse": [
+      "“Full many a gem of purest ray serene,",
+      "The dark unfathomed caves of ocean bear:",
+      "Full many a flower is born to blush unseen,",
+      "And waste its sweetness on the desert air.”"
+    ],
+    "closing": [
+      "In reclaiming his heritage, we as his progeny are only offering our very humble tribute to him. Our attempt is to revive, revitalize, and renew the story of this man, his contribution, and his legacy so he can reclaim his deserved place in civilization’s galaxy of the wise and the learned."
+    ],
+    "books": [
+      {
+        "image": "jivanandanam.jpg",
+        "category": "SANSKRIT LITERATURE",
+        "title": "Jivanandanam of Anandaraya Makhin",
+        "readLinks": [
+          {
+            "label": "View",
+            "old": "http://www.vaidyacharya.org/jivanandanam-of-anandaraya-makhin-sanskrit/"
+          }
+        ],
+        "description": [
+          "An allegorical play, filled with medical and political knowledge, it is a layered text open to multiple interpretations, nuanced and layered, centering around the attack by the king of disease, Consumption on the hero of the play, the Soul of man, and his final deliverance through his faith in God. Pandit Duraiswami wrote a commentary in Sanskrit on this work, drawn to it for its masterful explanation of Ayurveda in political terms that any layman could understand."
+        ],
+        "downloadLinks": [
+          {
+            "label": "Download",
+            "old": "http://www.vaidyacharya.org/download/2193/"
+          }
+        ]
+      },
+      {
+        "image": "kiratarjuniya.jpg",
+        "category": "SANSKRIT LITERATURE",
+        "title": "Kiratarjuniya",
+        "readLinks": [
+          {
+            "label": "Sanskrit",
+            "old": "http://www.vaidyacharya.org/kiratarjuniya/"
+          },
+          {
+            "label": "English",
+            "old": "http://www.vaidyacharya.org/kiratarjuniya-english-explaination/"
+          }
+        ],
+        "description": [
+          "Composed in the 6th C., this play describing in 18 cantos the combat between Arjuna and Shiva as a Kirata (mountain-dweller) during the years when the Pandavas were in exile, contains some of the most bewitchingly well-structured linguistic feats, both of construction and expression, unimaginable to any but the most profound scholars, earning for itself the title of the most powerful poem in Sanskrit. What Pandit Duraiswami has done is to write notes in Sanskrit on Mallinatha’s commentary on Kiratarjuniya, wherein he explores not only the beauty of the language, but also the message of the play which portrays all the universe (of gods, demi-gods and man) as one."
+        ],
+        "downloadLinks": [
+          {
+            "label": "Sanskrit",
+            "old": "http://www.vaidyacharya.org/download/2198/"
+          },
+          {
+            "label": "English",
+            "old": "http://www.vaidyacharya.org/download/2200/"
+          }
+        ]
+      },
+      {
+        "image": "Ashtanga-Hrudhayam.jpg",
+        "category": "AYURVEDA BOOKS",
+        "title": "Ashtanga Hridayam",
+        "readLinks": [
+          {
+            "label": "View",
+            "old": "http://www.vaidyacharya.org/ashtanga-hridayam/"
+          }
+        ],
+        "description": [
+          "Ashtanga Hridayam meaning ‘the heart of the eight branches of Ayurveda’, was composed by the eminent scholar Vagbhatta in the 7th C. and has 7120 verses written in a poetic style for easy recital, thereby presenting a comprehensive account of this esoteric school of medicine and soon became the root source for Ayurvedic philosophy and teachings. Pandit Duraiswami translated this text into Tamil so that Tamil physicians could have a solid foundation of Sanskrit works for their procedures."
+        ],
+        "downloadLinks": [
+          {
+            "label": "Download",
+            "old": "http://www.vaidyacharya.org/download/2182/"
+          }
+        ]
+      },
+      {
+        "image": "Ashtanga-Hridayam.jpg",
+        "category": "AYURVEDA BOOKS",
+        "title": "Madhava Nidanam",
+        "readLinks": [
+          {
+            "label": "View",
+            "old": "http://www.vaidyacharya.org/madhava-nidanam/"
+          }
+        ],
+        "description": [
+          "Also known as <em>Rug Vinischaya, Madhava Nidhanam</em> was authored by Madhava, a 7th C. Ayurvedic practitioner and is a comprehensive Ayurvedic treatise which names 79 diseases in as many chapters, along with their causes, symptoms and complications and is considered first among the minor triad of Ayurvedic literature. Pandit Duraiswami took great pains to translate this treatise into Tamil reaching out thereby to a much larger audience."
+        ],
+        "downloadLinks": [
+          {
+            "label": "Download",
+            "old": "http://www.vaidyacharya.org/download/2204/"
+          }
+        ]
+      },
+      {
+        "image": "Tantrasarasangra_pandit-compressed.jpg",
+        "category": "GENERAL BOOK",
+        "title": "Tantrasarasangra Pandit",
+        "readLinks": [
+          {
+            "label": "View",
+            "old": "http://www.vaidyacharya.org/tantrasara-sangraha/"
+          }
+        ],
+        "description": [
+          "<em>Tantra</em> <em>Sara</em> was the compendium of worship supposedly taught to Lord Brahma by Lord Vishnu and Madwacharya extracted relevant portions of it into this volume, which consists of the (i) chanting of the great Vaishnava <em>mantras</em> (ii) aspects of <em>Aavarana</em> pooja (iii) <em>Kalasha</em> pooja (iv) comprehending the various forms and expressions of Lord Vishnu (v) <em>yagna</em> rituals (vi) meditation (vii) <em>vasthu</em> of temple construction (viii) sculpture and aspects related to the installation of icons. Pandit Duraiswami Aiyangar being a staunch Vaishnavite was obviously attracted to this work and through his Tamil translation, wanted to disseminate this knowledge to the devout Tamilian reader."
+        ],
+        "downloadLinks": [
+          {
+            "label": "Download",
+            "old": "http://www.vaidyacharya.org/download/2215/"
+          }
+        ]
+      },
+      {
+        "image": "The-Presidential-Address.jpg",
+        "category": "GENERAL BOOK",
+        "title": "The Presidential Address",
+        "readLinks": [
+          {
+            "label": "Tamil",
+            "old": "http://www.vaidyacharya.org/the-presidential-address/"
+          },
+          {
+            "label": "English",
+            "old": "http://www.vaidyacharya.org/the-presidential-address-english-translation/"
+          }
+        ],
+        "description": [
+          "In the Presidential Address which was delivered by Pandit Duraiswami Aiyangar in Tamil, at the sixth Dravida Vaidya Conference held at Trichinopoly on May 28, 1934, he lauds the ancient heritage of Ayurveda, its spiritual descent from Danvantari, God of medicine himself, the special feature of the three humours which formed the basis of its diagnostical skill as also the neglect of the branch of surgery in Ayurveda, which was an important aspect of this science and which deserved to be encouraged. He used strong and logical arguments to debunk both the dubious claims of Siddhas, (another branch of indigenous medicine) and the British led Western medical sciences which tried to discredit Ayurveda, all the while drawing from its extensive knowledge. The greatness and glory of Ayurveda comes across clearly as also his pride in being a proponent of this wonderful healing practice."
+        ],
+        "downloadLinks": [
+          {
+            "label": "Tamil",
+            "old": "http://www.vaidyacharya.org/download/2226/"
+          },
+          {
+            "label": "English",
+            "old": "http://www.vaidyacharya.org/download/2228/"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "storyHeading": "About Us…The Story so far",
+    "story": [
+      "Pandit Duraiswami Aiyangar’s scholarly pursuits straddled the arena of science (through his study of Ayurveda), the creative spaces of literature (through his translation of Kalidasa), and the fascinating field of philosophy (through his commentaries on Vedantic texts). Proficient in Tamil, his mother tongue, Sanskrit, his preferred language of expression, Malayalam and Manipravalam, languages he picked up along the way, and English, the language of western communication, he was born to be a translator and commentator.",
+      "Yet despite his phenomenal contribution to the field of Ayurveda and literature, popularising esoteric texts and complex literary works, he was almost entirely unknown outside the tight-knit community of Ayurvedic doctors or Sanskrit scholars. Many of his works, unpublished and in manuscript form only, have been lost forever. The other lies in ancient libraries which offer little access.",
+      "It was only when one of his grand-daughters, Malavika Muralidharan decided to follow a trail of his writings, that discoveries started tumbling out of archives, libraries, and unknown collectors of ancient manuscripts. It has taken fifteen years of dedicated and diligent effort in pursuing pointers, conversing with librarians, reaching dead-ends, and picking up the strands again, to arrive at a point where at least a small portion of Pandit Duraiswami’s effort has come to light.",
+      "After collecting and compiling many of Pandit Duraiswami Aiyangar’s works, Malavika approached her cousin Vivek Ragavan, whose father M.D. Vijayaraghavan was Pandit Duraiswami Aiyangar’s eldest son. Together, these two grandchildren of Pandit Duraiswami Aiyangar decided to establish the Vaidyacharya Trust with",
+      "The express purpose of collecting, translating, and otherwise making these books available for posterity. The Trust has already embarked upon an ongoing project of locating all the works of Pandit Duraiswami, gathering them in one place, translating them into English, and uploading them to this website so that they are available for the general public. We hope that through this effort, researchers, scholars, interested students, as well as a wider audience, will be granted a treasure trove of translations and commentaries which will enable scholarship to thrive, insights to be created, and greater light is thrown on the wisdom and heritage of an ancient civilization which still has so much to contribute to mankind."
+    ],
+    "trustees": [
+      {
+        "photo": "Vivek-Ragavan-min.jpg",
+        "name": "VIVEK RAGAVAN",
+        "bio": [
+          "Vivek Ragavan is Pandit Duraiswami Aiyangar’s grandson (the son of Pandit Duraiswami’s first son, Vijayaraghavan) and has, together with Malavika been passionate about preserving the works of his grandfather for future generations.",
+          "Vivek has always shown keen interest in embarking on the intellectual journey of exploring the works of ancient Indian philosophy, science, literature, and music and to his delight, discovered through Malavika’s diligent work, a treasure trove of manuscripts written by his own grandfather on these subjects. Realizing that this was the need of the hour, Vivek, with inputs from his cousins, decided to create a website containing the digitized versions of these manuscripts.",
+          "But Vivek and Malavika went further. Knowing that there was a vast English reading audience thirsting for a sip of ancient India’s contribution to the world of medicine and literature, and for whom the Sanskrit language was an impregnable barrier, they began commissioning the translation of these works into English. As each text is finalized, it will be added to the website, enriching and enhancing its value constantly.",
+          "Vivek is a telecommunications networking industry veteran and seasoned entrepreneur with more than 35 years of high-technology leadership experience. He has served as President and CEO of private and public companies and as a board member of many private companies in this industry. He currently serves on the Advisory Council of the McCormick School of Engineering at Northwestern University, as a board member of the Akanksha Fund in the USA, and as a trustee of the Motivation for Excellence (MFE) Initiative.",
+          "Vivek received his B.Sc. in electrical engineering from Northwestern University, his M.Sc. in electrical engineering from Cornell University, and currently resides in the San Francisco Bay area."
+        ]
+      },
+      {
+        "photo": "Malavika-min.jpg",
+        "name": "Malavika Muralidharan",
+        "bio": [
+          "Malavika is the daughter of Vaijayanti – the third child of Pandit Duraiswami Aiyangar. She was born when her grandfather was translating Kavi Kalidasa’s Malavika Agnimitram and owes her name to the heroine of Kalidasa’s play.",
+          "A librarian by profession, Malavika’s interest in her grandfather’s work was sparked when she stumbled upon references to several of his works on the internet. From that little kindling of curiosity, it has been one long but exciting journey for her, across continents, combing the by-lanes of little-known districts of Tamil Nadu in India, contacting libraries in the United States and India, trying to discover what her grandfather wrote, locating his published works, pursuing scholars who could translate them into English, and even tracing the arduous route her grandfather took from his birth in the village of Melpakkam near the Uttarmerur temple, to his culmination as a doctor in the province of Madras, as it was then known.",
+          "All through her career, Malavika has worked in libraries, starting at the TIFR Library and Indian Institute of Geomagnetism in Mumbai and then the Indian Institute of Science in Bangalore. She later went on to head the British Council Library in Mumbai. Currently, Malavika works at the Arizona State Library, Phoenix, AZ, USA."
+        ]
+      }
+    ],
+    "contributorsHeading": "Other Major Contributors",
+    "contributors": [
+      "Chandrika, Malavika’s sister, whose love for writing must have come from her grandfather, corrected, edited, and put into words all that was inchoate so far. She shares their appreciation of and admiration for their grandfather.",
+      "The greatest treasures are often found in the most astounding of ways. After a vain search for years to locate someone who not only knew English, Sanskrit and Tamil but was computer savvy as well, all of a sudden the fates conspired to lead Malavika to Dr. S. Usha from Chennai in Tamil Nadu. She is a doctorate in Sanskrit and Sri. Vaishnavism, the ablest person to undertake the task of translation as she is proficient both in language and content. At present, she has translated Hamsa Sandesham and the Presidential Address with the same dedication and attention to detail that was the hallmark of Pandit Duraiswami. Best of all, she brings to her work a spirit of reverence, realizing the immense value of Pandit Duraiswami’s contribution to the world of ideas."
+    ],
+    "trusteesHeading": "Trustees"
+  },
+  "contact": {
+    "heading": "Get In Touch With Us",
+    "email": "info@vaidyacharya.org"
+  },
+  "hamsa": {
+    "title": "Hamsa Sandesham(English Translation)",
+    "oldUrl": "https://www.vaidyacharya.org/hamsa-sandeshamenglish-translation/",
+    "pdf": "Hamsasandesa-Complete-Translation_compressed1.pdf"
+  }
+}

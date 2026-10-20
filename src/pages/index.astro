@@ -51,6 +51,10 @@ const { home, about } = content;
 </Base>
 
 <style>
+  /* Home page only: very light blue background (header included). */
+  :global(:root) {
+    --paper: #eef5fb;
+  }
   .hero {
     display: grid;
     gap: 32px 56px;

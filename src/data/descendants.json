@@ -1,0 +1,1426 @@
+{
+  "heading": "Descendants",
+  "intro": "Pandit Duraiswami Aiyangar and his wife Kanakavalli had six children. Their family carries his work forward today through the Vaidyacharya Trust. Click a name to see that person’s publications.",
+  "missing": "The names of the other four children, and of more grandchildren and great-grandchildren, are still to be added.",
+  "tree": {
+    "id": "duraiswami",
+    "name": "Pandit Duraiswami Aiyangar",
+    "role": "1888 – 1956",
+    "note": "Physician, scholar, translator and founder of the journal Vaidya Kalanidhi.",
+    "link": "/biography/#bibliography",
+    "linkLabel": "See his full bibliography",
+    "publications": [],
+    "spouse": {
+      "id": "kanakavalli",
+      "name": "Kanakavalli",
+      "role": "Wife",
+      "note": "Of the Echambadi family, Tiruvallur.",
+      "publications": []
+    },
+    "children": [
+      {
+        "id": "vijayaraghavan",
+        "name": "M.D. Vijayaraghavan",
+        "role": "Eldest son · b. 1922",
+        "publications": [],
+        "children": [
+          {
+            "id": "vivek",
+            "name": "Vivek Ragavan",
+            "role": "Grandson · Trustee",
+            "note": "Co-founder of the Vaidyacharya Trust.",
+            "link": "/about/",
+            "linkLabel": "About Vivek",
+            "publications": [],
+            "spouse": {
+              "id": "nilima",
+              "name": "Nilima Ragavan",
+              "role": "Wife",
+              "publications": [
+                {
+                  "title": "A Neonate With a Perineal Lesion",
+                  "venue": "NeoReviews",
+                  "year": "2019",
+                  "url": "https://doi.org/10.1542/neo.20-11-e680"
+                },
+                {
+                  "title": "Umbilical Artery (UA) and Vein (UV) Catheters: A Survey of Practices in Neonatal Intensive Care Units",
+                  "venue": "Pediatric Research (conference abstract)",
+                  "year": "1999",
+                  "url": "https://doi.org/10.1203/00006450-199904020-00774"
+                }
+              ],
+              "note": "Neonatologist and Clinical Professor of Pediatrics at Stanford; Neonatal Outreach Medical Director for Stanford Children’s Health and founder of Teach to Heal.",
+              "mentions": [
+                {
+                  "title": "How a cultural exchange from Palo Alto to rural India is advancing perinatal health",
+                  "venue": "Stanford Medicine Scope · Laura Hedli",
+                  "year": "2024",
+                  "url": "https://scopeblog.stanford.edu/2024/04/25/perinatal-health-stanford-india-gujarat"
+                },
+                {
+                  "title": "25 Years of Exceptional Care for Moms and Babies in Redwood City",
+                  "venue": "Stanford Medicine Children’s Health · Lynn Nichols",
+                  "year": "2024",
+                  "url": "https://healthier.stanfordchildrens.org/en/25-years-of-exceptional-care-for-moms-and-babies-in-redwood-city/"
+                }
+              ],
+              "link": "https://profiles.stanford.edu/nilima-ragavan",
+              "linkLabel": "Stanford profile"
+            },
+            "children": [
+              {
+                "id": "maya",
+                "name": "Maya Ragavan",
+                "role": "Great-granddaughter",
+                "publications": [
+                  {
+                    "title": "Hospital-Based Secure Firearm Storage Programs: How Can We Go Further?",
+                    "venue": "Hosp Pediatr",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1542/hpeds.2026-009781"
+                  },
+                  {
+                    "title": "Development and Pilot Testing of a Novel Training for Doulas Addressing Intimate Partner Violence",
+                    "venue": "Health Promot Pract",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1177/15248399261481153"
+                  },
+                  {
+                    "title": "The future of the pediatric research workforce: implications of an evolving fellowship training landscape",
+                    "venue": "Pediatr Res",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1038/s41390-026-05459-6"
+                  },
+                  {
+                    "title": "Inclusion of Participants With Limited English Proficiency in Autism Research",
+                    "venue": "Autism Res",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1002/aur.70331"
+                  },
+                  {
+                    "title": "Barriers to evidence-based counseling and support for perinatal intimate partner violence survivors using cannabis and nicotine products: Survivor and advocate perspectives",
+                    "venue": "Int J Gynaecol Obstet",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1002/ijgo.71274"
+                  },
+                  {
+                    "title": "Exploring resiliencies to housing eviction and alcohol-related harms: A photo elicitation study",
+                    "venue": "Wellbeing Space Soc",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/j.wss.2026.100344"
+                  },
+                  {
+                    "title": "Caregiver-Reported Quality of Pediatric Primary Care Language Services",
+                    "venue": "Pediatrics",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1542/peds.2025-075312"
+                  },
+                  {
+                    "title": "Does Housing Eviction Modify the Effects of Alcohol Outlet Density on Hospitalizations for Assault and Alcohol Use Disorder in Pennsylvania?",
+                    "venue": "Alcohol Clin Exp Res (Hoboken)",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1111/acer.70372"
+                  },
+                  {
+                    "title": "Combating the Climate Crisis: The Pediatric Clinician as Family and Community Partner",
+                    "venue": "Pediatr Clin North Am",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/j.pcl.2026.03.014"
+                  },
+                  {
+                    "title": "Climate change and Medicaid: leveraging health policy to support environmental protections for children",
+                    "venue": "Pediatr Res",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1038/s41390-026-05008-1"
+                  },
+                  {
+                    "title": "Doula Care and Health Outcomes: A Systematic Review",
+                    "venue": "JAMA Netw Open",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2026.8416"
+                  },
+                  {
+                    "title": "Cross-Language Qualitative Child Health Research: A Systematic Review",
+                    "venue": "Pediatrics",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1542/peds.2025-070795"
+                  },
+                  {
+                    "title": "Surrogate Perspectives on the Communication and Support Processes That Enable Them as Active Decision-Makers Across Chronic Critical Illness",
+                    "venue": "CHEST Crit Care",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/j.chstcc.2025.100220"
+                  },
+                  {
+                    "title": "Advancing Trauma-Informed Care for Intimate Partner Violence Survivors",
+                    "venue": "JAMA Netw Open",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2026.0029"
+                  },
+                  {
+                    "title": "A spatial analysis of the associations between housing eviction and alcohol-related hospitalizations in Pennsylvania",
+                    "venue": "Health Place",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/j.healthplace.2026.103632"
+                  },
+                  {
+                    "title": "An Evaluation of a Youth Collaborative Approach to Addressing Nicotine and Tobacco Misinformation on Social Media",
+                    "venue": "Health Promot Pract",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1177/15248399251415427"
+                  },
+                  {
+                    "title": "Clinicians' Perspectives on Strengthening Interprofessional Teamwork to Support Surrogate Decision-Makers of Critically Ill Patients in ICUs",
+                    "venue": "Crit Care Explor",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1097/CCE.0000000000001365"
+                  },
+                  {
+                    "title": "Fortifying our commitment to pediatric academic medicine during turbulent times",
+                    "venue": "Pediatr Res",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1038/s41390-025-04621-w"
+                  },
+                  {
+                    "title": "When Will the United States Meaningfully Invest in Children?",
+                    "venue": "Acad Pediatr",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/j.acap.2025.103169"
+                  },
+                  {
+                    "title": "Staff Burnout Prevention and Mitigation Protocol for Research Studies on Sexual and Intimate Partner Violence",
+                    "venue": "Health Educ Behav",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1177/10901981251377715"
+                  },
+                  {
+                    "title": "Health-Related Social Needs Intervention for Adolescents and Young Adults With Type 2 Diabetes and Their Caregivers: An Exploratory Study Using Human-Centered Design",
+                    "venue": "Community Health Equity Res Policy",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1177/2752535X251316990"
+                  },
+                  {
+                    "title": "Lower Child Opportunity Index is Associated with Lower Exercise Capacity Post-Fontan Palliation",
+                    "venue": "Pediatr Cardiol",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1007/s00246-024-03752-x"
+                  },
+                  {
+                    "title": "Association of Child Opportunity Index with Outcomes in Pediatric Supraventricular Tachycardia",
+                    "venue": "Pediatr Cardiol",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1007/s00246-024-03723-2"
+                  },
+                  {
+                    "title": "Climate Change and Children",
+                    "venue": "Pediatric Clinics of North America",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/s0031-3955(26)00048-9"
+                  },
+                  {
+                    "title": "Language Access to Language Justice: Strategies to Transform Pediatric Research and Health Care",
+                    "venue": "Pediatrics",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1542/peds.2025-073303"
+                  },
+                  {
+                    "title": "Cannabis and Nicotine Substance Use Coercion During the Perinatal Period",
+                    "venue": "Womens Health Rep (New Rochelle)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/26884844251387024"
+                  },
+                  {
+                    "title": "Postpartum dietary, sleep, and physical activity behaviors: A qualitative study to inform efforts to address postpartum weight retention",
+                    "venue": "Womens Health (Lond)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/17455057251384412"
+                  },
+                  {
+                    "title": "Communicating Health Research With Plain Language",
+                    "venue": "Inquiry",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/00469580251357755"
+                  },
+                  {
+                    "title": "Policy-level solutions to support families experiencing adverse childhood experiences",
+                    "venue": "Pediatr Res",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1038/s41390-025-04284-7"
+                  },
+                  {
+                    "title": "Caregiver and Pediatric Clinician Perspectives on Artificial Intelligence for Language Services",
+                    "venue": "Acad Pediatr",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1016/j.acap.2025.102887"
+                  },
+                  {
+                    "title": "The association of the child opportunity index on outcomes in paediatric patients with Wolff-Parkinson-White",
+                    "venue": "Cardiol Young",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1017/S1047951125100802"
+                  },
+                  {
+                    "title": "Nonresponse to Health-Related Social Needs Screening Items Within Pediatric Primary Care",
+                    "venue": "Pediatrics",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1542/peds.2025-070853"
+                  },
+                  {
+                    "title": "Inclusion of Community-Based Participatory Research in High-Impact Medical Journals",
+                    "venue": "Health Equity",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1089/heq.2024.0151"
+                  },
+                  {
+                    "title": "Housing Eviction and Alcohol-Related Harms: A Review of the Literature",
+                    "venue": "Subst Use Misuse",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1080/10826084.2025.2508745"
+                  },
+                  {
+                    "title": "Equitable research is better research: let's invest in doing it right",
+                    "venue": "Pediatr Res",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1038/s41390-025-04119-5"
+                  },
+                  {
+                    "title": "A Qualitative Study of CMC Caregivers' Perspectives about their Emotional Well-Being",
+                    "venue": "J Pain Symptom Manage",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1016/j.jpainsymman.2025.03.028"
+                  },
+                  {
+                    "title": "Researcher Perceptions of Inclusion of Study Participants Who Use Languages Other Than English",
+                    "venue": "JAMA Netw Open",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2025.2380"
+                  },
+                  {
+                    "title": "Do You Speak English or Spanish? Language as a Predictor of Health Outcomes Among Hispanic Adolescents",
+                    "venue": "J Immigr Minor Health",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1007/s10903-025-01676-z"
+                  },
+                  {
+                    "title": "Caregivers' Perspectives on Supporting Sexual and Gender-Diverse Youth in Adolescent Relationship Abuse Prevention",
+                    "venue": "Health Educ Behav",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/10901981241311216"
+                  },
+                  {
+                    "title": "Exploring the Dimensions and Correlates of Teen Economic Abuse Through a Cross-Sectional Survey",
+                    "venue": "J Adolesc Health",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2024.09.018"
+                  },
+                  {
+                    "title": "Associations Between Acculturation, Discrimination, and Adolescent Relationship Abuse: A Matched Parent-Adolescent Study of Latine Families",
+                    "venue": "J Interpers Violence",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/08862605241280087"
+                  },
+                  {
+                    "title": "Loneliness, Discrimination, Stress, and Type 2 Diabetes Risk in Young Adults",
+                    "venue": "Am J Prev Med",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1016/j.amepre.2024.09.019"
+                  },
+                  {
+                    "title": "\"How Fluent Do I Need to Be to Say I'm Fluent?\" Research Experiences of Communities that Speak Languages Other than English",
+                    "venue": "Community Health Equity Res Policy",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/2752535X241238095"
+                  },
+                  {
+                    "title": "Applying a Language Justice Framework in Research: A Step Toward Achieving Health Equity",
+                    "venue": "Health Promot Pract",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1177/15248399241236182"
+                  },
+                  {
+                    "title": "Nurturing Resilience: Supporting Care Providers Working with Trauma Survivors",
+                    "venue": "Intimate Partner Violence (book chapter)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1093/oso/9780197758991.003.0038"
+                  },
+                  {
+                    "title": "Relationship Abuse in Adolescence and Young Adulthood",
+                    "venue": "Intimate Partner Violence (book chapter)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1093/oso/9780197758991.003.0023"
+                  },
+                  {
+                    "title": "Pathways to Prenatal Cannabis Use Among Younger Bisexual People",
+                    "venue": "Drug and Alcohol Dependence",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1016/j.drugalcdep.2024.111461"
+                  },
+                  {
+                    "title": "Prioritizing caregiver mental health to promote child health",
+                    "venue": "Pediatr Res",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1038/s41390-024-03787-z"
+                  },
+                  {
+                    "title": "Pediatricians' Practices and Desired Resources for Addressing Intimate Partner Violence",
+                    "venue": "Partner Abuse",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1891/pa-2023-0044"
+                  },
+                  {
+                    "title": "Caregivers of children with asthma alarmed by climate change: a cross-sectional study",
+                    "venue": "Pediatr Pulmonol",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1002/ppul.27288"
+                  },
+                  {
+                    "title": "Climate Change, Extreme Weather Events, and Child Health: A Call to Action",
+                    "venue": "Pediatrics",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1542/peds.2024-067391"
+                  },
+                  {
+                    "title": "Doulas as family partners in the neuro neonatal intensive care unit",
+                    "venue": "Pediatr Res",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1038/s41390-024-03445-4"
+                  },
+                  {
+                    "title": "Promoting Language Justice for Children With Medical Complexity and Their Families: An Urgent Call to Action",
+                    "venue": "Hosp Pediatr",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1542/hpeds.2024-007792"
+                  },
+                  {
+                    "title": "Online Human-Centered Design Methods are Acceptable, Appropriate, and Feasible for Generating Adolescent Relationship Abuse Intervention Ideas With Sexual and Gender Diverse Youth",
+                    "venue": "J Adolesc Health",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2024.06.001"
+                  },
+                  {
+                    "title": "Perinatal Economic Abuse: Experiences, Impacts, and Needed Resources",
+                    "venue": "J Womens Health (Larchmt)",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1089/jwh.2024.0119"
+                  },
+                  {
+                    "title": "Supporting Youth Exposed to Violence in the Post-Pandemic: Prevention and Intervention Strategies",
+                    "venue": "Pediatr Clin North Am",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1016/j.pcl.2024.04.001"
+                  },
+                  {
+                    "title": "Primary care perspectives on prescribing anti-obesity medication for adolescents",
+                    "venue": "Pediatr Obes",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1111/ijpo.13146"
+                  },
+                  {
+                    "title": "Prediabetes Prevalence by Adverse Social Determinants of Health in Adolescents",
+                    "venue": "JAMA Netw Open",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2024.16088"
+                  },
+                  {
+                    "title": "Associations Among Plurisexual Identity, Intimate Partner Violence, Reproductive Coercion, and Parental Monitoring in a Sample of Adolescent and Young Adult Pregnant People",
+                    "venue": "LGBT Health",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1089/lgbt.2023.0288"
+                  },
+                  {
+                    "title": "Promoting Equity in Pediatric Health Care Through Language Services Reimbursement",
+                    "venue": "Pediatrics",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1542/peds.2023-064214"
+                  },
+                  {
+                    "title": "Adolescent mental health and academic performance: determining evidence-based associations and informing approaches to support in educational settings",
+                    "venue": "Pediatr Res",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1038/s41390-024-03098-3"
+                  },
+                  {
+                    "title": "Projected impact of anti-obesity pharmacotherapy use on racial and ethnic disparities in adolescent obesity",
+                    "venue": "Pediatr Obes",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1111/ijpo.13103"
+                  },
+                  {
+                    "title": "Creating Healing-Centered Spaces for Intimate Partner Violence Survivors in the Postpartum Unit: Examining Current Practices and Desired Resources Among Health Care Providers and Postpartum People",
+                    "venue": "J Womens Health (Larchmt)",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1089/jwh.2023.0347"
+                  },
+                  {
+                    "title": "Economic Abuse and Help-Seeking Intentions Among Adolescents",
+                    "venue": "J Interpers Violence",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1177/08862605231194640"
+                  },
+                  {
+                    "title": "Developing a Youth Participatory Action Research Program for Latine Youth in an Emerging Community",
+                    "venue": "Health Promot Pract",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1177/15248399231176248"
+                  },
+                  {
+                    "title": "From Vaccines to Vitality: The Progression of a Community-Academic Collaboration",
+                    "venue": "Health Promot Pract",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1177/15248399221137271"
+                  },
+                  {
+                    "title": "The COVID-19 vaccination experience of non-English speaking immigrant and refugee communities of color: A community co-created study",
+                    "venue": "Community Health Equity Res Policy",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1177/2752535X221133140"
+                  },
+                  {
+                    "title": "Shifting the Paradigm From Participant Mistrust to Researcher & Institutional Trustworthiness: A Qualitative Study of Researchers' Perspectives on Building Trustworthiness With Black Communities",
+                    "venue": "Community Health Equity Res Policy",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1177/0272684X221117710"
+                  },
+                  {
+                    "title": "Adapting community engagement studios for an older adult community experts",
+                    "venue": "Innovation in Aging (conference abstract)",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1093/geroni/igae098.1172"
+                  },
+                  {
+                    "title": "Lower childhood opportunity index is associated with lower exercise capacity post-fontan palliation",
+                    "venue": "Journal of the American College of Cardiology (conference abstract)",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1016/s0735-1097(24)03649-0"
+                  },
+                  {
+                    "title": "COVID-19 Pandemic Impact on United States Intimate Partner Violence Organizations: Administrator Perspectives",
+                    "venue": "J Fam Violence",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1007/s10896-023-00641-4"
+                  },
+                  {
+                    "title": "Intimate Partner Violence-Related Firearm Child Homicides: An Urgent Call to Action",
+                    "venue": "Pediatrics",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1542/peds.2023-063805"
+                  },
+                  {
+                    "title": "Supporting Intimate Partner Violence Survivors and Their Children in Pediatric Healthcare Settings",
+                    "venue": "Pediatr Clin North Am",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1016/j.pcl.2023.06.016"
+                  },
+                  {
+                    "title": "Intimate Partner Violence: Role of the Pediatrician",
+                    "venue": "Pediatrics",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1542/peds.2023-062509"
+                  },
+                  {
+                    "title": "Experiences of Exploitation and Associations With Economic Abuse in Adolescent Dating Relationships: Findings From a U.S. Cross-Sectional Survey",
+                    "venue": "J Trauma Dissociation",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1080/15299732.2023.2212404"
+                  },
+                  {
+                    "title": "Creating Healing-Centered Health Systems by Reimagining Social Needs Screening and Supports",
+                    "venue": "JAMA Pediatr",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1001/jamapediatrics.2023.0343"
+                  },
+                  {
+                    "title": "Validation of the Clinicians' Cultural Sensitivity Survey for Use in Pediatric Primary Care Settings",
+                    "venue": "J Immigr Minor Health",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1007/s10903-023-01469-2"
+                  },
+                  {
+                    "title": "Sexual Health and Relationship Abuse Interventions in Pediatric Primary Care: A Systematic Review",
+                    "venue": "J Adolesc Health",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2022.11.011"
+                  },
+                  {
+                    "title": "Adolescent Relationship Abuse Prevention in Pediatric Primary Care: Provider, Adolescent, and Parent Perspectives",
+                    "venue": "Acad Pediatr",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1016/j.acap.2022.12.005"
+                  },
+                  {
+                    "title": "Inclusion of Non-English-Speaking Participants in Pediatric Health Research: A Review",
+                    "venue": "JAMA Pediatr",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1001/jamapediatrics.2022.3828"
+                  },
+                  {
+                    "title": "COVID-19 Information Sources for Black and Latine Communities: A Community Co-created Survey",
+                    "venue": "Prog Community Health Partnersh",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1353/cpr.2022.0035"
+                  },
+                  {
+                    "title": "Perspectives on Anti-Black Racism and Mitigation Strategies Among Faculty Experts at Academic Medical Centers",
+                    "venue": "JAMA Netw Open",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2022.8534"
+                  },
+                  {
+                    "title": "Supporting Children Experiencing Family Violence During the COVID-19 Pandemic: IPV and CPS Provider Perspectives",
+                    "venue": "Acad Pediatr",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1016/j.acap.2022.03.011"
+                  },
+                  {
+                    "title": "Healing-Centered Care for Intimate Partner Violence Survivors and Their Children",
+                    "venue": "Pediatrics",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1542/peds.2022-056980"
+                  },
+                  {
+                    "title": "Child Protective Services Reports in the Context of Intimate Partner Violence: A Delphi Process Examining Best Practices",
+                    "venue": "Acad Pediatr",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1016/j.acap.2022.02.019"
+                  },
+                  {
+                    "title": "Culturally Sensitive Interventions in Pediatric Primary Care Settings: A Systematic Review",
+                    "venue": "Pediatrics",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1542/peds.2021-052162"
+                  },
+                  {
+                    "title": "Addressing Adolescent Relationship Abuse in the Context of Reproductive Health Care",
+                    "venue": "Semin Reprod Med",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1055/s-0041-1741519"
+                  },
+                  {
+                    "title": "The impact of the COVID-19 pandemic on child protective services caseworkers and administrators",
+                    "venue": "Child Abuse Negl",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1016/j.chiabu.2021.105431"
+                  },
+                  {
+                    "title": "The Impact of the COVID-19 Pandemic on the Needs and Lived Experiences of Intimate Partner Violence Survivors in the United States: Advocate Perspectives",
+                    "venue": "Violence Against Women",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1177/10778012211054869"
+                  },
+                  {
+                    "title": "Prioritizing Prevention of Teen Dating Violence",
+                    "venue": "JAMA Pediatr",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1001/jamapediatrics.2021.4835"
+                  },
+                  {
+                    "title": "The Impact of the COVID-19 Pandemic on Intimate Partner Violence Advocates and Agencies",
+                    "venue": "J Fam Violence",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1007/s10896-021-00337-7"
+                  },
+                  {
+                    "title": "Parent-Reported Intention to Vaccinate Children Against COVID-19: Influences of COVID-19 and Seasonal Influenza Vaccination",
+                    "venue": "Clin Pediatr (Phila)",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1177/00099228211046499"
+                  },
+                  {
+                    "title": "Intimate Partner Violence and the Pediatric Electronic Health Record: A Qualitative Study",
+                    "venue": "Acad Pediatr",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1016/j.acap.2021.08.013"
+                  },
+                  {
+                    "title": "Associations Between Parental Monitoring and Multiple Types of Youth Violence Victimization: A Brief Report",
+                    "venue": "J Interpers Violence",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1177/08862605211035882"
+                  },
+                  {
+                    "title": "The Lasting Influence of a Peer-led Adolescent Relationship Abuse Prevention Program on Former Peer Leaders' Relationships, Identities, and Trajectories in Emerging Adulthood",
+                    "venue": "J Interpers Violence",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1177/0886260520967909"
+                  },
+                  {
+                    "title": "Climate Change as a Social Determinant of Health",
+                    "venue": "Pediatric Collections: Social Determinants of Health (Part 1: Underserved Communities) (book chapter)",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1542/9781610026352-part01-climate"
+                  },
+                  {
+                    "title": "Protective Factors Against Vaping and Other Tobacco Use",
+                    "venue": "Pediatrics",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1542/peds.2020-048066"
+                  },
+                  {
+                    "title": "A Community Partnered Approach to Promoting COVID-19 Vaccine Equity",
+                    "venue": "Health Promot Pract",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1177/15248399211029954"
+                  },
+                  {
+                    "title": "The intersection of pediatrics, climate change, and structural racism: Ensuring health equity through climate justice",
+                    "venue": "Curr Probl Pediatr Adolesc Health Care",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.cppeds.2021.101028"
+                  },
+                  {
+                    "title": "Future Orientation as a Cross-Cutting Protective Factor Against Multiple Forms of Violence",
+                    "venue": "J Pediatr",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.jpeds.2021.05.019"
+                  },
+                  {
+                    "title": "Academic General Pediatrics Hiring Practices and Completion of Academic General Pediatrics Fellowships",
+                    "venue": "Acad Pediatr",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.acap.2021.04.014"
+                  },
+                  {
+                    "title": "Electronic Vapor Product Use and Violence Victimization Among a Nationally Representative Sample of Adolescents",
+                    "venue": "J Adolesc Health",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2020.06.007"
+                  },
+                  {
+                    "title": "Expert Perspectives on Intimate Partner Violence Power and Control in Pediatric Healthcare Settings",
+                    "venue": "Acad Pediatr",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.acap.2020.02.021"
+                  },
+                  {
+                    "title": "A Validated Screening Instrument for Identifying Intimate Partner Violence in South Asian Immigrant Women",
+                    "venue": "J Interpers Violence",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1177/0886260518822344"
+                  },
+                  {
+                    "title": "The Influence of Culture on Healthy Relationship Formation and Teen Dating Violence: A Qualitative Analysis of South Asian Female Youth Residing in the United States",
+                    "venue": "J Interpers Violence",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1177/0886260518787815"
+                  },
+                  {
+                    "title": "Domestic Violence against Immigrant Women and Children in the United States",
+                    "venue": "The SAGE Handbook of Domestic Violence (book chapter)",
+                    "year": "2021",
+                    "url": "https://doi.org/10.4135/9781529742343.n43"
+                  },
+                  {
+                    "title": "Parents’ perspectives about discussing climate change during well-child visits",
+                    "venue": "The Journal of Climate Change and Health",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.joclim.2021.100048"
+                  },
+                  {
+                    "title": "The Role of Parental Monitoring as a Protective Factor Against Youth Violence Victimization",
+                    "venue": "Journal of Adolescent Health (conference abstract)",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2020.12.106"
+                  },
+                  {
+                    "title": "Future Orientation as a Cross-Cutting Protective Factor Against Multiple Forms of Violence",
+                    "venue": "Journal of Adolescent Health (conference abstract)",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2020.12.036"
+                  },
+                  {
+                    "title": "The Association of Protective Factors With Vaping in a Locally Representative Sample of High School Adolescents",
+                    "venue": "Journal of Adolescent Health (conference abstract)",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2020.12.091"
+                  },
+                  {
+                    "title": "Supporting Intimate Partner Violence Survivors and Their Children During the COVID-19 Pandemic",
+                    "venue": "Pediatrics",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1542/peds.2020-1276"
+                  },
+                  {
+                    "title": "Bilingual and Bicultural Research Teams: Unpacking the Complexities",
+                    "venue": "Health Equity",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1089/heq.2019.0111"
+                  },
+                  {
+                    "title": "Supporting Adolescents and Young Adults Exposed to or Experiencing Violence During the COVID-19 Pandemic",
+                    "venue": "J Adolesc Health",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2020.04.011"
+                  },
+                  {
+                    "title": "Climate Change as a Social Determinant of Health",
+                    "venue": "Pediatrics",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1542/peds.2019-3169"
+                  },
+                  {
+                    "title": "Social Support, Exposure to Parental Intimate Partner Violence, and Relationship Abuse Among Marginalized Youth",
+                    "venue": "J Adolesc Health",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2020.01.020"
+                  },
+                  {
+                    "title": "Thrive: A Novel Health Education Mobile Application for Mothers Who Have Experienced Intimate Partner Violence",
+                    "venue": "Health Promot Pract",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1177/1524839919890870"
+                  },
+                  {
+                    "title": "Parental Perceptions of Culturally Sensitive Care and Well-Child Visit Quality",
+                    "venue": "Acad Pediatr",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1016/j.acap.2019.12.007"
+                  },
+                  {
+                    "title": "Intimate Partner Violence: Identification and Response in Pediatric Health Care Settings",
+                    "venue": "Clin Pediatr (Phila)",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1177/0009922819879464"
+                  },
+                  {
+                    "title": "Assessing Intimate Partner Violence in South Asian Women Using the Index of Spouse Abuse",
+                    "venue": "Violence Against Women",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1177/1077801219842945"
+                  },
+                  {
+                    "title": "Exploring the Needs and Lived Experiences of Racial and Ethnic Minority Domestic Violence Survivors Through Community-Based Participatory Research: A Systematic Review",
+                    "venue": "Trauma Violence Abuse",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1177/1524838018813204"
+                  },
+                  {
+                    "title": "Violence Perpetrated by Mothers-in-Law in Northern India: Perceived Frequency, Acceptability, and Options for Survivors",
+                    "venue": "J Interpers Violence",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1177/0886260517708759"
+                  },
+                  {
+                    "title": "First-Generation Immigrant Mothers Report Less Spanking of 1-Year-Old Children Compared with Mothers of Other Immigrant Generations",
+                    "venue": "Matern Child Health J",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1007/s10995-018-2660-5"
+                  },
+                  {
+                    "title": "A systematic review of community-based research interventions for domestic violence survivors",
+                    "venue": "Psychology of Violence",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1037/vio0000183"
+                  },
+                  {
+                    "title": "The Complexities of Assessing Language and Interpreter Preferences in Pediatrics",
+                    "venue": "Health Equity",
+                    "year": "2018",
+                    "url": "https://doi.org/10.1089/heq.2017.0057"
+                  },
+                  {
+                    "title": "Building a Novel Health Curriculum for Survivors of Intimate Partner Violence Residing at a Transitional Housing Program",
+                    "venue": "Violence Against Women",
+                    "year": "2018",
+                    "url": "https://doi.org/10.1177/1077801217697206"
+                  },
+                  {
+                    "title": "The impact of domestic violence exposure on South Asian children in the United States: Perspectives of domestic violence agency staff",
+                    "venue": "Child Abuse Negl",
+                    "year": "2018",
+                    "url": "https://doi.org/10.1016/j.chiabu.2017.11.006"
+                  },
+                  {
+                    "title": "Chinese, Vietnamese, and Asian Indian Parents' Perspectives About Well-Child Visits: A Qualitative Analysis",
+                    "venue": "Acad Pediatr",
+                    "year": "2018",
+                    "url": "https://doi.org/10.1016/j.acap.2017.11.003"
+                  },
+                  {
+                    "title": "The Health of Women and Children After Surviving Intimate Partner Violence",
+                    "venue": "Violence Against Women",
+                    "year": "2017",
+                    "url": "https://doi.org/10.1177/1077801216656833"
+                  },
+                  {
+                    "title": "Health Education for Women and Children: A Community-Engaged Mutual Learning Curriculum for Health Trainees",
+                    "venue": "MedEdPORTAL",
+                    "year": "2016",
+                    "url": "https://doi.org/10.15766/mep_2374-8265.10492"
+                  },
+                  {
+                    "title": "Healthy Relationships and Physical Activity: A Qualitative Analysis of Middle School Girls and Their Parents",
+                    "venue": "Journal of Adolescent Health (conference abstract)",
+                    "year": "2016",
+                    "url": "https://doi.org/10.1016/j.jadohealth.2015.10.186"
+                  },
+                  {
+                    "title": "Perceptions of options available for victims of physical intimate partner violence in northern India",
+                    "venue": "Violence Against Women",
+                    "year": "2015",
+                    "url": "https://doi.org/10.1177/1077801215573332"
+                  },
+                  {
+                    "title": "Physical intimate partner violence in northern India",
+                    "venue": "Qual Health Res",
+                    "year": "2014",
+                    "url": "https://doi.org/10.1177/1049732314524027"
+                  }
+                ],
+                "note": "Pediatrician and health services researcher at the University of Pittsburgh.",
+                "source": "Peer-reviewed papers indexed in PubMed, plus conference abstracts, book chapters and other articles from Crossref, October 2026.",
+                "link": "https://pubmed.ncbi.nlm.nih.gov/?term=Ragavan+Maya%5BFull+Author+Name%5D&sort=date",
+                "linkLabel": "See the full, up-to-date list on PubMed"
+              },
+              {
+                "id": "meera",
+                "name": "Meera Ragavan",
+                "role": "Great-granddaughter",
+                "publications": [
+                  {
+                    "title": "Sociodemographic Disparities in Oncology Clinical Trial Enrollment in an Integrated Health System",
+                    "venue": "JAMA Netw Open",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2026.34580"
+                  },
+                  {
+                    "title": "Are We Still \"Choosing Wisely\" in Thoracic Surgery?",
+                    "venue": "Ann Thorac Surg",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1016/j.athoracsur.2026.06.064"
+                  },
+                  {
+                    "title": "Use of low-dose immune checkpoint inhibitors in low- and middle-income countries: a national survey of oncologists and hematologists in Mexico",
+                    "venue": "Ecancermedicalscience",
+                    "year": "2026",
+                    "url": "https://doi.org/10.3332/ecancer.2026.2144"
+                  },
+                  {
+                    "title": "Paving the Way for a Career in High Value Care: A Roadmap for Future Clinician Leaders",
+                    "venue": "J Gen Intern Med",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1007/s11606-026-10579-0"
+                  },
+                  {
+                    "title": "High-Deductible Health Plans and Mortality Among Cancer Survivors",
+                    "venue": "JAMA Netw Open",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1001/jamanetworkopen.2025.56451"
+                  },
+                  {
+                    "title": "Disaggregated lung cancer mortality trends in Asian American, Native Hawaiian, and Pacific Islander (AANHPI) patients by key sociodemographic features including sex, age, and smoking status",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1200/jco.2026.44.16_suppl.8593"
+                  },
+                  {
+                    "title": "Addressing gaps in pre-screening for interventional clinical trials among patients with newly diagnosed lung cancer, lymphoma, and multiple myeloma",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1200/op.2026.22.10_suppl.574"
+                  },
+                  {
+                    "title": "Catastrophic cost exposure for oral anticancer therapy under marketplace HDHPs",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1200/op.2026.22.10_suppl.8"
+                  },
+                  {
+                    "title": "Patterns of cost-sharing for patients prescribed osimertinib in an integrated health system",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2026",
+                    "url": "https://doi.org/10.1200/op.2026.22.10_suppl.11"
+                  },
+                  {
+                    "title": "The role of targetable biomarker alterations in overall survival for non-small cell lung cancer (NSCLC) in a large integrated health system",
+                    "venue": "J Thorac Dis",
+                    "year": "2025",
+                    "url": "https://doi.org/10.21037/jtd-2025-1043"
+                  },
+                  {
+                    "title": "Screening for comprehensive social needs in patients with cancer: a narrative review",
+                    "venue": "JNCI Cancer Spectr",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1093/jncics/pkaf012"
+                  },
+                  {
+                    "title": "Band-Aids Can Still Help Heal: The Role of Patient Financial Assistance Programs in Addressing Financial Toxicity",
+                    "venue": "JCO Oncol Pract",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1200/OP.24.00287"
+                  },
+                  {
+                    "title": "Consolidation ALK Tyrosine Kinase Inhibitors Versus Durvalumab or Observation After Chemoradiation in Unresectable Stage III ALK-Positive NSCLC",
+                    "venue": "J Thorac Oncol",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1016/j.jtho.2024.09.1379"
+                  },
+                  {
+                    "title": "Point-of-care social needs screening and resource navigation for patients with cancer undergoing active treatment: A pilot initiative",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1200/jco.2025.43.16_suppl.e13800"
+                  },
+                  {
+                    "title": "Point-of-care social needs screening for patients with cancer undergoing active treatment: A pilot initiative",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1200/op.2025.21.10_suppl.286"
+                  },
+                  {
+                    "title": "Do patients who utilize financial assistance programs to pay for oral anti-cancer medications face delays in treatment initiation and continuity?",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1200/op.2025.21.10_suppl.197"
+                  },
+                  {
+                    "title": "Sociodemographic disparities among patients referred externally for clinical trials in a community oncology setting",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1200/op.2025.21.10_suppl.125"
+                  },
+                  {
+                    "title": "Sociodemographic disparities among patients referred externally for clinical trials in a large community oncology setting",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2025",
+                    "url": "https://doi.org/10.1200/jco.2025.43.16_suppl.e13756"
+                  },
+                  {
+                    "title": "Clinical Validity and Utility of Circulating Tumor DNA (ctDNA) Testing in Advanced Non-small Cell Lung Cancer (aNSCLC): A Systematic Literature Review and Meta-analysis",
+                    "venue": "Mol Diagn Ther",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1007/s40291-024-00725-x"
+                  },
+                  {
+                    "title": "Beyond the PSA: The hidden costs of screening in prostate cancer",
+                    "venue": "Cancer",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1002/cncr.35474"
+                  },
+                  {
+                    "title": "Receipt of financial assistance for oral targeted therapy among older adults with advanced non-small cell lung cancer: A prospective cohort study",
+                    "venue": "J Geriatr Oncol",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1016/j.jgo.2024.101746"
+                  },
+                  {
+                    "title": "Lay healthcare worker financial toxicity intervention: a pilot financial toxicity screening and referral program",
+                    "venue": "Support Care Cancer",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1007/s00520-024-08357-x"
+                  },
+                  {
+                    "title": "Consolidation Osimertinib Versus Durvalumab Versus Observation After Concurrent Chemoradiation in Unresectable EGFR-Mutant NSCLC: A Multicenter Retrospective Cohort Study",
+                    "venue": "J Thorac Oncol",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1016/j.jtho.2024.01.012"
+                  },
+                  {
+                    "title": "Pharmacy Assistance Programs for Oral Anticancer Drugs: A Narrative Review",
+                    "venue": "JCO Oncol Pract",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1200/OP.23.00295"
+                  },
+                  {
+                    "title": "Access to Financial Assistance Programs and Their Impact on Overall Spending on Oral Anticancer Medications at an Integrated Specialty Pharmacy",
+                    "venue": "JCO Oncol Pract",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1200/OP.23.00446"
+                  },
+                  {
+                    "title": "High deductible health plans and survival among cancer survivors",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2024",
+                    "url": "https://doi.org/10.1200/jco.2024.42.16_suppl.11005"
+                  },
+                  {
+                    "title": "Clinical validity and utility of circulating tumor DNA (ctDNA) testing in advanced non-small cell lung cancer (aNSCLC): a systematic literature review and meta-analysis",
+                    "venue": "medRxiv",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1101/2023.10.27.23297657"
+                  },
+                  {
+                    "title": "The Health Inequality Impact of Liquid Biopsy to Inform First-Line Treatment of Advanced Non-Small Cell Lung Cancer: A Distributional Cost-Effectiveness Analysis",
+                    "venue": "Value Health",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1016/j.jval.2023.08.010"
+                  },
+                  {
+                    "title": "Private Payer and Medicare Coverage Policies for Use of Circulating Tumor DNA Tests in Cancer Diagnostics and Treatment",
+                    "venue": "J Natl Compr Canc Netw",
+                    "year": "2023",
+                    "url": "https://doi.org/10.6004/jnccn.2023.7011"
+                  },
+                  {
+                    "title": "The costs and inequities of precision medicine for patients with prostate cancer: A call to action",
+                    "venue": "Urol Oncol",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1016/j.urolonc.2023.04.012"
+                  },
+                  {
+                    "title": "Impact of a Comprehensive Financial Resource on Financial Toxicity in a National, Multiethnic Sample of Adult, Adolescent/Young Adult, and Pediatric Patients With Cancer",
+                    "venue": "JCO Oncol Pract",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1200/OP.22.00350"
+                  },
+                  {
+                    "title": "Receipt of financial drug assistance for oral targeted therapy among older adults with advanced non-small cell lung cancer (NSCLC)",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1200/jco.2023.41.16_suppl.e18916"
+                  },
+                  {
+                    "title": "Does financial assistance reduce catastrophic spending for patients prescribed oral anti-cancer medications at an integrated Specialty Pharmacy?",
+                    "venue": "JCO Oncology Practice (conference abstract)",
+                    "year": "2023",
+                    "url": "https://doi.org/10.1200/op.2023.19.11_suppl.27"
+                  },
+                  {
+                    "title": "Analysis of Serious Adverse Event Reporting for Patients Enrolled in Cancer Clinical Trials During the COVID-19 Pandemic",
+                    "venue": "JAMA Oncol",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1001/jamaoncol.2022.4919"
+                  },
+                  {
+                    "title": "Estimating maternity ward birth attendant time use in India: a microcosting study",
+                    "venue": "BMJ Open",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1136/bmjopen-2021-054164"
+                  },
+                  {
+                    "title": "The evolving landscape of sex-based differences in lung cancer: a distinct disease in women",
+                    "venue": "Eur Respir Rev",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1183/16000617.0100-2021"
+                  },
+                  {
+                    "title": "Oncologists’ attitudes and practices regarding fertility preservation at a tertiary academic center",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1200/jco.2022.40.28_suppl.190"
+                  },
+                  {
+                    "title": "Disparities in receipt of financial assistance for patients prescribed oral anti-cancer medications at an integrated specialty pharmacy",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2022",
+                    "url": "https://doi.org/10.1200/jco.2022.40.28_suppl.217"
+                  },
+                  {
+                    "title": "Financial Toxicity of Cancer Care: An Analysis of Financial Burden in Three Distinct Health Care Systems",
+                    "venue": "JCO Oncol Pract",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1200/OP.20.00890"
+                  },
+                  {
+                    "title": "Defining the clinician's role in mitigating financial toxicity: an exploratory study",
+                    "venue": "Support Care Cancer",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1007/s00520-021-05984-6"
+                  },
+                  {
+                    "title": "Predictors of high financial distress in a national, multiethnic sample of patients with cancer",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1200/jco.2020.39.28_suppl.149"
+                  },
+                  {
+                    "title": "Evolving oncology provider perspectives on care delivery during the COVID-19 pandemic",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2021",
+                    "url": "https://doi.org/10.1200/jco.2021.39.15_suppl.e18609"
+                  },
+                  {
+                    "title": "Healthcare delivery interventions to reduce cancer disparities worldwide",
+                    "venue": "World J Clin Oncol",
+                    "year": "2020",
+                    "url": "https://doi.org/10.5306/wjco.v11.i9.705"
+                  },
+                  {
+                    "title": "Understanding sex disparities in lung cancer incidence: are women more at risk?",
+                    "venue": "Lung Cancer Manag",
+                    "year": "2020",
+                    "url": "https://doi.org/10.2217/lmt-2020-0013"
+                  },
+                  {
+                    "title": "Systemic Therapy of Extensive Stage Small Cell Lung Cancer in the Era of Immunotherapy",
+                    "venue": "Curr Treat Options Oncol",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1007/s11864-020-00762-8"
+                  },
+                  {
+                    "title": "Association Between HEDIS Performance and Primary Care Physician Age, Group Affiliation, Training, and Participation in ACA Exchanges",
+                    "venue": "J Gen Intern Med",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1007/s11606-020-05642-3"
+                  },
+                  {
+                    "title": "Comparison of perspectives and practices to mitigate financial toxicity between advance practice providers and attending oncologists",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2020",
+                    "url": "https://doi.org/10.1200/jco.2020.38.29_suppl.82"
+                  },
+                  {
+                    "title": "Exploring Care Attributes of Nephrologists Ranking Favorably on Measures of Value",
+                    "venue": "J Am Soc Nephrol",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1681/ASN.2019030219"
+                  },
+                  {
+                    "title": "Perspectives and practices of oncology providers in addressing financial toxicity",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1200/jco.2019.37.15_suppl.e18342"
+                  },
+                  {
+                    "title": "Financial toxicity among veterans with cancer",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1200/jco.2019.37.27_suppl.103"
+                  },
+                  {
+                    "title": "Impact of dual-eligible status on survival in Medicare patients with lung cancer",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1200/jco.2019.37.27_suppl.149"
+                  },
+                  {
+                    "title": "Demographic factors associated with financial toxicity: Results from the multisite cost study",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2019",
+                    "url": "https://doi.org/10.1200/jco.2019.37.15_suppl.e18362"
+                  },
+                  {
+                    "title": "Financial toxicity of cancer treatment at a diverse county hospital",
+                    "venue": "Journal of Clinical Oncology (conference abstract)",
+                    "year": "2018",
+                    "url": "https://doi.org/10.1200/jco.2018.36.30_suppl.76"
+                  },
+                  {
+                    "title": "Barriers to timely discharge from the general medicine service at an academic teaching hospital",
+                    "venue": "Postgrad Med J",
+                    "year": "2017",
+                    "url": "https://doi.org/10.1136/postgradmedj-2016-134529"
+                  },
+                  {
+                    "title": "Scheduled surgery admissions and occupancy at a children's hospital: variation we can control to improve efficiency and value in health care delivery",
+                    "venue": "Ann Surg",
+                    "year": "2013",
+                    "url": "https://doi.org/10.1097/SLA.0b013e3182683178"
+                  },
+                  {
+                    "title": "Traditional measures of hospital utilization may not accurately reflect dynamic patient demand: findings from a children's hospital",
+                    "venue": "Hosp Pediatr",
+                    "year": "2012",
+                    "url": "https://doi.org/10.1542/hpeds.2011-0016-2"
+                  },
+                  {
+                    "title": "Scheduled admissions and high occupancy at a children's hospital",
+                    "venue": "J Hosp Med",
+                    "year": "2011",
+                    "url": "https://doi.org/10.1002/jhm.819"
+                  }
+                ],
+                "note": "Oncologist and health services researcher at Kaiser Permanente Northern California.",
+                "source": "Peer-reviewed papers indexed in PubMed, and conference abstracts from Crossref, October 2026.",
+                "link": "https://pubmed.ncbi.nlm.nih.gov/?term=Ragavan+Meera+V%5Bau%5D&sort=date",
+                "linkLabel": "See the full, up-to-date list on PubMed"
+              },
+              {
+                "id": "neil",
+                "name": "Neil Ragavan",
+                "role": "Great-grandson",
+                "publications": []
+              }
+            ]
+          }
+        ],
+        "spouse": {
+          "id": "vimala",
+          "name": "Vimala Ragavan",
+          "role": "Wife",
+          "publications": [],
+          "parents": [
+            {
+              "id": "alagasingam",
+              "name": "Dr. Alagasingam Vasudevan",
+              "role": "Vimala’s father",
+              "publications": []
+            },
+            {
+              "id": "singari",
+              "name": "Singari Ammal",
+              "role": "Vimala’s mother",
+              "publications": []
+            }
+          ]
+        }
+      },
+      {
+        "id": "vaijayanti",
+        "name": "Vaijayanti",
+        "role": "Third child",
+        "note": "She later recounted how her father learned languages by deciphering posters on walls.",
+        "publications": [],
+        "children": [
+          {
+            "id": "malavika",
+            "name": "Malavika Muralidharan",
+            "role": "Granddaughter · Trustee",
+            "note": "Named after the heroine of Kalidasa’s Malavika Agnimitram, which her grandfather was translating when she was born.",
+            "link": "/about/",
+            "linkLabel": "About Malavika",
+            "publications": []
+          },
+          {
+            "id": "chandrika",
+            "name": "Chandrika",
+            "role": "Granddaughter",
+            "note": "Edited the Trust’s writing about her grandfather.",
+            "publications": [],
+            "children": [
+              {
+                "id": "dharini",
+                "name": "Dharini Bhaskar",
+                "role": "Great-granddaughter",
+                "note": "Novelist and publisher. Associate Publisher, Literary, at HarperCollins India. She has also written for Hindu BusinessLine, Mint Lounge, Firstpost, Arré and Vogue.",
+                "publications": [
+                  {
+                    "title": "The Only City: Bombay in Eighteen Stories (short story in the anthology)",
+                    "venue": "Fourth Estate / HarperCollins India",
+                    "year": "2025"
+                  },
+                  {
+                    "title": "Like Being Alive Twice (novel)",
+                    "venue": "Penguin Random House India",
+                    "year": "2024",
+                    "url": "https://www.penguin.co.in/book/like-being-alive-twice/"
+                  },
+                  {
+                    "title": "The Unschooling Life: The Learner and the Mentor",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-the-learner-and-the-mentor"
+                  },
+                  {
+                    "title": "The Unschooling Life: When The World Splinters",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-when-the-world-splinters"
+                  },
+                  {
+                    "title": "The Unschooling Life: Insects And Birds",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-insects-and-birds"
+                  },
+                  {
+                    "title": "The Unschooling Life: Chasing Cars",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-chasing-cars"
+                  },
+                  {
+                    "title": "The Unschooling Life: A Social Animal (Part 3)",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-a-social-animal-part-3"
+                  },
+                  {
+                    "title": "The Unschooling Life: A Social Animal (Part 2)",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-a-social-animal-part-2"
+                  },
+                  {
+                    "title": "The Unschooling Life: A Social Animal (Part 1)",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-a-social-animal-part-1"
+                  },
+                  {
+                    "title": "The Unschooling Life: This, The Reward",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-this-the-reward"
+                  },
+                  {
+                    "title": "The Unschooling Life: All is Play",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-all-is-play"
+                  },
+                  {
+                    "title": "The Unschooling Life: Confronting History",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-confronting-history"
+                  },
+                  {
+                    "title": "The Unschooling Life: This Is Real",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/education/the-homeschooling-life-this-is-real"
+                  },
+                  {
+                    "title": "The Unschooling Life: The Star Child",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-the-star-child"
+                  },
+                  {
+                    "title": "The Unschooling Life: Only Connect",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/analysis/the-unschooling-life-only-connect"
+                  },
+                  {
+                    "title": "The Unschooling Life: Just Right",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/education/the-unschooling-life-just-right"
+                  },
+                  {
+                    "title": "The Unschooling Life: Born Free",
+                    "venue": "The Free Press Journal (column)",
+                    "year": "2023",
+                    "url": "https://www.freepressjournal.in/education/the-unschooling-life-born-free"
+                  },
+                  {
+                    "title": "These, Our Bodies, Possessed by Light (novel)",
+                    "venue": "Hachette India · Shortlisted for the 2020 JCB Prize for Literature",
+                    "year": "2020",
+                    "url": "https://www.hachetteindia.com/Home/bookdetails/Info/9789391028138/these_-our-bodies_-possessed-by-light"
+                  },
+                  {
+                    "title": "These, Our Bodies, Possessed by Light: An Excerpt",
+                    "venue": "The Punch Magazine",
+                    "year": "2020",
+                    "url": "https://thepunchmagazine.com/the-byword/fiction/these-our-bodies-possessed-by-light-an-excerpt"
+                  },
+                  {
+                    "title": "Book Review: Just out",
+                    "venue": "The Free Press Journal",
+                    "year": "2019",
+                    "url": "https://www.freepressjournal.in/book-reviews/book-review-just-out-6"
+                  },
+                  {
+                    "title": "Day’s End Stories (short story in the anthology)",
+                    "venue": "Anthology"
+                  }
+                ],
+                "source": "Books, stories and articles found online, October 2026.",
+                "link": "https://www.freepressjournal.in/author/dharini-bhaskar",
+                "linkLabel": "All her Free Press Journal columns"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "placeholder": true,
+        "name": "Four more children",
+        "role": "Names to be added"
+      }
+    ]
+  }
+}

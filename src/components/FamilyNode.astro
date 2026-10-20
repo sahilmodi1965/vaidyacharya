@@ -1,0 +1,46 @@
+---
+// One branch of the family tree: a person (and spouse), then their children, drawn recursively.
+const { person } = Astro.props;
+const count = (p: any) => p.publications?.length ?? 0;
+---
+
+<li>
+  {person.placeholder ? (
+    <div class="couple placeholder">
+      <span class="who">
+        <span class="name">{person.name}</span>
+        <span class="role">{person.role}</span>
+      </span>
+    </div>
+  ) : (
+    <div class="couple">
+      {[person, person.spouse].filter(Boolean).map((p, i) => (
+        <>
+          {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
+          <div class="person">
+            {p.parents?.length > 0 && (
+              <div class="parents">
+                {p.parents.map((pa: any) => (
+                  <button type="button" class="who parent" data-person={pa.id} aria-haspopup="dialog">
+                    <span class="name">{pa.name}</span>
+                    {pa.role && <span class="role">{pa.role}</span>}
+                  </button>
+                ))}
+              </div>
+            )}
+            <button type="button" class:list={['who', { spouse: i === 1 }]} data-person={p.id} aria-haspopup="dialog">
+              <span class="name">{p.name}</span>
+              {p.role && <span class="role">{p.role}</span>}
+              {count(p) > 0 && <span class="pubs">{count(p)} publication{count(p) === 1 ? '' : 's'}</span>}
+            </button>
+          </div>
+        </>
+      ))}
+    </div>
+  )}
+  {person.children?.length > 0 && (
+    <ul>
+      {person.children.map((c: any) => <Astro.self person={c} />)}
+    </ul>
+  )}
+</li>

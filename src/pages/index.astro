@@ -15,9 +15,9 @@ const { home, about } = content;
     <Image class="portrait" src={img(home.portrait)} alt="Portrait of Pandit Duraiswami Aiyangar" widths={[320, 500]} sizes="(min-width: 860px) 360px, 70vw" loading="eager" />
     <div>
       <h1 class="name">{home.heading}</h1>
-      <ul class="titles">
-        {home.titles.map((t) => <li>{t}</li>)}
-      </ul>
+      <div class="intro">
+        {home.intro.map((p, i) => <p class={i === 0 ? 'lead' : undefined}>{p}</p>)}
+      </div>
     </div>
   </section>
 
@@ -29,7 +29,7 @@ const { home, about } = content;
         {home.verse.map((l) => <p>{l}</p>)}
       </blockquote>
       {home.closing.map((p) => <p set:html={p} />)}
-      <p><a href={link('/about/')}>About the Vaidyacharya Trust</a></p>
+      <p><a href={link('/biography/')}>Read his biography</a> · <a href={link('/about/')}>About the Vaidyacharya Trust</a></p>
     </div>
   </section>
 
@@ -74,30 +74,21 @@ const { home, about } = content;
   .name {
     text-transform: capitalize;
   }
-  .titles {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    columns: 2 18rem;
-    column-gap: 40px;
+  .intro {
+    max-width: 40rem;
     color: var(--muted);
-    font-size: var(--step--1);
-    line-height: 1.5;
+    line-height: 1.65;
   }
-  .titles li {
-    break-inside: avoid;
-    padding: 6px 0 6px 18px;
-    position: relative;
+  .intro p {
+    margin: 0 0 1em;
   }
-  .titles li::before {
-    content: '';
-    position: absolute;
-    left: 2px;
-    top: 0.95em;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent-2);
+  .intro .lead {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-style: italic;
+    color: var(--accent);
+    padding-bottom: 0.9em;
+    border-bottom: 1px solid var(--line);
   }
   .all {
     margin-top: 32px;

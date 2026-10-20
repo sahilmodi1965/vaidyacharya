@@ -38,8 +38,9 @@ Everything on the live site came from Wayback Machine copies of vaidyacharya.org
 
 From the old sitemap and menu. No copy of any of them exists in the Wayback Machine.
 
-- [ ] **TODO: Biography** (`/biography/`). Both "Know More" buttons on the old home page pointed here. Probably the most valuable missing page. For now it redirects to About.
-- [ ] **TODO: Bibliography** (`/bibliography/`). Redirects to Works for now.
+- [x] **Biography** (`/biography/`). Not in the Wayback Machine; rebuilt from the family's Word document "Biography of Pandit Doraiswamy Aiyangar with bibliography" (November 2020). The text is the family's own, with only obvious typos fixed and the duplicate journal entries merged. The chapter headings were added for the web.
+- [x] **Bibliography** (`/bibliography/`). From the same document; it's the second half of the Biography page, and `/bibliography/` redirects to `/biography/#bibliography`.
+- [ ] **TODO: birth year.** The home page (from the old site) says 1883; the biography says 1888, and it says he was "barely twenty" in 1908 and died at sixty eight in 1956, which fits 1888. Confirm with the family.
 - [ ] **TODO: category pages**: Ayurveda Books, Vedanta Books, Sanskrit Literature, General Books, Books for Download. No **Vedanta** work at all was recovered, though the About page says he wrote commentaries on Vedantic texts.
 - [ ] **TODO: Privacy Policy** (`/privacy-policy/`). Only needed if the site collects anything; this one doesn't (no forms, no analytics).
 - Not rebuilt on purpose: Shop, Basket, Checkout, My Account, Login, Registration, No Access, My Profile (WooCommerce and membership pages), Sample Page, `home_1`, and the default "Hello world!" post.

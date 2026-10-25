@@ -45,14 +45,7 @@
             "note": "Co-founder of the Vaidyacharya Trust.",
             "link": "/about/",
             "linkLabel": "About Vivek",
-            "publications": [
-              {
-                "title": "Palestinians ask to share their land",
-                "venue": "The Daily Northwestern, October 19, 1973, p. 7 · Daily Viewpoint column, bylined Vivek Vijayaraghavan",
-                "year": "1973",
-                "pdf": "/pdf/daily-northwestern-1973-10-19-p7.pdf"
-              }
-            ],
+            "publications": [],
             "spouse": {
               "id": "nilima",
               "name": "Nilima Ragavan",

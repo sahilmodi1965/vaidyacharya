@@ -246,13 +246,6 @@ const byYear = (pubs: any[]) => {
     left: 50%;
     border-left: 2px solid var(--join);
   }
-  .family-tree li:only-child::before,
-  .family-tree li:only-child::after {
-    display: none;
-  }
-  .family-tree li:only-child {
-    padding-top: 0;
-  }
   .family-tree li:first-child::before,
   .family-tree li:last-child::after {
     border: 0 none;
@@ -274,6 +267,15 @@ const byYear = (pubs: any[]) => {
   }
   .family-tree > ul > li {
     padding-top: 0;
+  }
+  /* An only child keeps the same gap as children with siblings, so each generation lines up; the line runs straight down. */
+  .family-tree li:only-child::before {
+    display: none;
+  }
+  .family-tree li:only-child::after {
+    border-top: 0;
+    border-left: 2px solid var(--join);
+    border-radius: 0;
   }
   /* The root has no parent line (the in-law line drawn beside it would otherwise stop it being :only-child). */
   .family-tree > ul > li::before,

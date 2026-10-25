@@ -36,6 +36,9 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
                     <button type="button" class="who spouse" data-person={pa.id} aria-haspopup="dialog">
                       <span class="name">{pa.name}</span>
                       {pa.role && <span class="role">{pa.role}</span>}
+                      {pa.patents?.map((pt: any) => (
+                        <span class="pubs">{pt.title || `Patent ${pt.number}`} · {pt.filed}</span>
+                      ))}
                     </button>
                   </>
                 ))}

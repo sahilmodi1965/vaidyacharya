@@ -73,7 +73,17 @@
                   "id": "ramnarayan",
                   "name": "Ramnarayan Manudhane",
                   "role": "Nilima’s father",
-                  "publications": []
+                  "publications": [],
+                  "patents": [
+                    {
+                      "number": "IN 146980",
+                      "title": "",
+                      "filed": "1976",
+                      "granted": "1979",
+                      "application": "318/BOM/76",
+                      "url": "https://patents.google.com/patent/IN146980B/en"
+                    }
+                  ]
                 }
               ]
             },

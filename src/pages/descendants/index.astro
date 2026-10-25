@@ -14,12 +14,6 @@ const walk = (p: any) => {
 };
 walk(family.tree);
 
-// Parents of the root's children's spouses sit in the top row, beside the root.
-const inlaws = (family.tree.children ?? [])
-  .filter((c: any) => c.spouse?.parents?.length)
-  .map((c: any) => ({ child: c.spouse.id, parents: c.spouse.parents }));
-const hoisted = inlaws.map((g) => g.child);
-
 // Publications grouped by year, newest first; undated ones last.
 const byYear = (pubs: any[]) => {
   const groups = new Map<string, any[]>();
@@ -41,7 +35,7 @@ const byYear = (pubs: any[]) => {
   <section class="tree-section">
     <div class="family-tree" tabindex="0" aria-label="Family tree">
       <ul>
-        <FamilyNode person={family.tree} inlaws={inlaws} hoisted={hoisted} />
+        <FamilyNode person={family.tree} />
       </ul>
     </div>
     <p class="wrap scroll-hint">Scroll sideways to see the whole tree.</p>
@@ -137,15 +131,17 @@ const byYear = (pubs: any[]) => {
     });
     root.append(svg);
   };
-  // Where the spouse is drawn first, pad the couple's right side so the lines above and below meet the descendant, not the gap between the two.
+  // Where a spouse has their own parents' line coming in, pad one side of the couple so the lines above and below meet the descendant, not the gap between the two.
   const centreOnDescendant = () => {
     document.querySelectorAll<HTMLElement>('.couple-wrap[data-anchor]').forEach((wrap) => {
-      wrap.style.marginRight = '';
+      wrap.style.marginLeft = wrap.style.marginRight = '';
       const who = wrap.querySelector<HTMLElement>(`[data-person="${wrap.dataset.anchor}"]`);
       if (!who) return;
       const w = wrap.getBoundingClientRect();
       const b = who.getBoundingClientRect();
-      wrap.style.marginRight = `${Math.max(0, 2 * (b.left + b.width / 2 - w.left) - w.width)}px`;
+      const pad = 2 * (b.left + b.width / 2 - w.left) - w.width;
+      if (pad > 0) wrap.style.marginRight = `${pad}px`;
+      else wrap.style.marginLeft = `${-pad}px`;
     });
   };
   // Every person's box is the same size: as tall as the tallest one.
@@ -279,10 +275,15 @@ const byYear = (pubs: any[]) => {
   .inlaws-row {
     position: absolute;
     top: 50%;
-    right: calc(100% + 48px);
     transform: translateY(-50%);
     display: flex;
     gap: 20px;
+  }
+  .inlaws-row.left {
+    right: calc(100% + 48px);
+  }
+  .inlaws-row.right {
+    left: calc(100% + 48px);
   }
   .inlaw-lines {
     position: absolute;

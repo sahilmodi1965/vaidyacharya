@@ -1,12 +1,17 @@
 ---
 // One branch of the family tree: a person (and spouse), then their children, drawn recursively.
-// `inlaws` (top row only): a spouse's parents, drawn as a couple to the left of the root at the same level.
-// `hoisted`: ids of spouses whose parents are drawn in that top row instead of above them.
-const { person, inlaws = [], hoisted = [] } = Astro.props;
+// A child's spouse's parents ("in-laws") are drawn beside this couple, at the same level, on the
+// side the data gives (`parentsSide`), with a line down to the spouse. Only the root's own spouse
+// keeps their parents drawn directly above them, since there is no row higher up.
+const { person, root = true } = Astro.props;
 const count = (p: any) => p.publications?.length ?? 0;
-// A spouse whose parents are up in the top row goes first, so the line down to them doesn't cross the couple's own line.
+const inlaws = (person.children ?? [])
+  .filter((c: any) => c.spouse?.parents?.length)
+  .map((c: any) => ({ child: c.spouse.id, parents: c.spouse.parents, side: c.spouse.parentsSide ?? 'right' }));
+const hasInlaws = !root && person.spouse?.parents?.length > 0;
+// In-laws on the left: the spouse goes first, so the line down to them doesn't cross the couple's own line.
 const pair = [person, person.spouse].filter(Boolean);
-if (hoisted.includes(person.spouse?.id)) pair.reverse();
+if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
 ---
 
 <li>
@@ -18,30 +23,33 @@ if (hoisted.includes(person.spouse?.id)) pair.reverse();
       </span>
     </div>
   ) : (
-    <div class="couple-wrap" data-anchor={pair[0] !== person ? person.id : undefined}>
-      {inlaws.length > 0 && (
-        <div class="inlaws-row">
-          {inlaws.map((g: any) => (
-            <div class="couple inlaws" data-joins={g.child}>
-              {g.parents.map((pa: any, i: number) => (
-                <>
-                  {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
-                  <button type="button" class="who spouse" data-person={pa.id} aria-haspopup="dialog">
-                    <span class="name">{pa.name}</span>
-                    {pa.role && <span class="role">{pa.role}</span>}
-                  </button>
-                </>
-              ))}
-            </div>
-          ))}
-        </div>
-      )}
+    <div class="couple-wrap" data-anchor={hasInlaws ? person.id : undefined}>
+      {['left', 'right'].map((side) => {
+        const groups = inlaws.filter((g: any) => g.side === side);
+        return groups.length > 0 && (
+          <div class={`inlaws-row ${side}`}>
+            {groups.map((g: any) => (
+              <div class="couple inlaws" data-joins={g.child}>
+                {g.parents.map((pa: any, i: number) => (
+                  <>
+                    {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
+                    <button type="button" class="who spouse" data-person={pa.id} aria-haspopup="dialog">
+                      <span class="name">{pa.name}</span>
+                      {pa.role && <span class="role">{pa.role}</span>}
+                    </button>
+                  </>
+                ))}
+              </div>
+            ))}
+          </div>
+        );
+      })}
       <div class="couple">
         {pair.map((p, i) => (
           <>
             {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
             <div class="person">
-              {p.parents?.length > 0 && !hoisted.includes(p.id) && (
+              {root && p.parents?.length > 0 && (
                 <div class="parents">
                   {p.parents.map((pa: any) => (
                     <button type="button" class="who parent" data-person={pa.id} aria-haspopup="dialog">
@@ -64,7 +72,7 @@ if (hoisted.includes(person.spouse?.id)) pair.reverse();
   )}
   {person.children?.length > 0 && (
     <ul>
-      {person.children.map((c: any) => <Astro.self person={c} hoisted={hoisted} />)}
+      {person.children.map((c: any) => <Astro.self person={c} root={false} />)}
     </ul>
   )}
 </li>

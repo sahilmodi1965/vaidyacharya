@@ -25,6 +25,12 @@
         "publications": [],
         "children": [
           {
+            "id": "vanaja",
+            "name": "Vanaja Ragavan",
+            "role": "Granddaughter",
+            "publications": []
+          },
+          {
             "id": "vivek",
             "name": "Vivek Ragavan",
             "role": "Grandson · Trustee",

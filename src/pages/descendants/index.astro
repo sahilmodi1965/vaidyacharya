@@ -90,7 +90,7 @@ const byYear = (pubs: any[]) => {
                     {pub.url ? <a href={link(pub.url)} target="_blank" rel="noopener">{pub.title}</a> : <cite>{pub.title}</cite>}
                     {pub.venue && <span class="pub-meta">{pub.venue}</span>}
                     {pub.pdf && (
-                      <object class="pub-pdf" data={`${link(pub.pdf)}#view=FitH`} type="application/pdf" aria-label={pub.title}>
+                      <object class="pub-pdf" data={`${link(pub.pdf)}#navpanes=0&view=FitH`} type="application/pdf" aria-label={pub.title}>
                         <p class="fallback">Your browser can’t show the PDF here. <a href={link(pub.pdf)}>Open it (PDF)</a>.</p>
                       </object>
                     )}

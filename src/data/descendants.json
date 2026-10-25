@@ -28,7 +28,15 @@
             "id": "vanaja",
             "name": "Vanaja Ragavan",
             "role": "Granddaughter",
-            "publications": []
+            "publications": [
+              {
+                "title": "Drug Development for Women",
+                "venue": "Edited by Vanaja V. Ragavan · John Wiley & Sons, 480 pages (ISBN 0-471-96850-1)",
+                "year": "1998",
+                "url": "https://openlibrary.org/works/OL17195517W",
+                "inBox": "Editor, Drug Development for Women · 1998"
+              }
+            ]
           },
           {
             "id": "vivek",

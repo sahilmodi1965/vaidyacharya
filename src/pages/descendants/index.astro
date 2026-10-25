@@ -148,7 +148,15 @@ const byYear = (pubs: any[]) => {
       wrap.style.marginRight = `${Math.max(0, 2 * (b.left + b.width / 2 - w.left) - w.width)}px`;
     });
   };
+  // Every person's box is the same size: as tall as the tallest one.
+  const evenHeights = () => {
+    const boxes = [...document.querySelectorAll<HTMLElement>('.family-tree .who')];
+    boxes.forEach((b) => (b.style.minHeight = ''));
+    const tallest = Math.max(...boxes.map((b) => b.getBoundingClientRect().height));
+    boxes.forEach((b) => (b.style.minHeight = `${tallest}px`));
+  };
   const layout = () => {
+    evenHeights();
     centreOnDescendant();
     drawInlawLines();
   };
@@ -357,8 +365,8 @@ const byYear = (pubs: any[]) => {
   .who {
     display: grid;
     gap: 2px;
-    min-width: 9.5rem;
-    max-width: 12rem;
+    align-content: center;
+    width: 11rem;
     padding: 10px 12px;
     font: inherit;
     text-align: center;
@@ -405,8 +413,7 @@ const byYear = (pubs: any[]) => {
       padding-inline: 4px;
     }
     .who {
-      min-width: 7.5rem;
-      max-width: 9.5rem;
+      width: 8.5rem;
       padding: 8px 8px;
     }
     .who .name {

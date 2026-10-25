@@ -14,6 +14,12 @@ const walk = (p: any) => {
 };
 walk(family.tree);
 
+// Parents of the root's children's spouses sit in the top row, beside the root.
+const inlaws = (family.tree.children ?? [])
+  .filter((c: any) => c.spouse?.parents?.length)
+  .map((c: any) => ({ child: c.spouse.id, parents: c.spouse.parents }));
+const hoisted = inlaws.map((g) => g.child);
+
 // Publications grouped by year, newest first; undated ones last.
 const byYear = (pubs: any[]) => {
   const groups = new Map<string, any[]>();
@@ -35,7 +41,7 @@ const byYear = (pubs: any[]) => {
   <section class="tree-section">
     <div class="family-tree" tabindex="0" aria-label="Family tree">
       <ul>
-        <FamilyNode person={family.tree} />
+        <FamilyNode person={family.tree} inlaws={inlaws} hoisted={hoisted} />
       </ul>
     </div>
     <p class="wrap scroll-hint">Scroll sideways to see the whole tree.</p>
@@ -98,6 +104,43 @@ const byYear = (pubs: any[]) => {
   // A link like /descendants/#maya opens that person's publications.
   const id = location.hash.slice(1);
   if (id) document.querySelector<HTMLDialogElement>(`#person-${CSS.escape(id)}`)?.showModal();
+  // Draw a line from each in-law couple in the top row down to their child in the tree.
+  const drawInlawLines = () => {
+    const root = document.querySelector<HTMLElement>('.family-tree > ul');
+    if (!root) return;
+    root.querySelector('.inlaw-lines')?.remove();
+    const box = root.getBoundingClientRect();
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.classList.add('inlaw-lines');
+    svg.setAttribute('aria-hidden', 'true');
+    root.querySelectorAll<HTMLElement>('.inlaws[data-joins]').forEach((from) => {
+      const to = root.querySelector<HTMLElement>(`[data-person="${from.dataset.joins}"]`);
+      const toCouple = to?.closest<HTMLElement>('.couple');
+      if (!to || !toCouple) return;
+      const a = from.getBoundingClientRect();
+      const b = to.getBoundingClientRect();
+      const x1 = a.left + a.width / 2 - box.left;
+      const y1 = a.bottom - box.top;
+      const x2 = b.left + b.width / 2 - box.left;
+      const y2 = toCouple.getBoundingClientRect().top - box.top;
+      const mid = y2 - 14;
+      const r = Math.min(8, Math.abs(x2 - x1) / 2);
+      const dir = Math.sign(x2 - x1) || 1;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute(
+        'd',
+        Math.abs(x2 - x1) < 6
+          ? `M${x2} ${y1} V${y2}`
+          : `M${x1} ${y1} V${mid - r} q0 ${r} ${dir * r} ${r} H${x2 - dir * r} q${dir * r} 0 ${dir * r} ${r} V${y2}`,
+      );
+      svg.append(path);
+    });
+    root.append(svg);
+  };
+  drawInlawLines();
+  document.fonts?.ready.then(drawInlawLines);
+  window.addEventListener('resize', drawInlawLines);
+
   // Clicking the backdrop closes the dialog.
   document.querySelectorAll<HTMLDialogElement>('.person-dialog').forEach((d) => {
     d.addEventListener('click', (e) => {
@@ -143,6 +186,7 @@ const byYear = (pubs: any[]) => {
     position: relative;
   }
   .family-tree > ul {
+    position: relative;
     width: max-content;
     margin-inline: auto;
     padding-top: 0;
@@ -199,7 +243,35 @@ const byYear = (pubs: any[]) => {
   .family-tree > ul > li {
     padding-top: 0;
   }
+  /* The root has no parent line (the in-law line drawn beside it would otherwise stop it being :only-child). */
+  .family-tree > ul > li::before,
+  .family-tree > ul > li::after {
+    display: none;
+  }
 
+  /* The root couple stays centred over its children; in-laws hang off its left side. */
+  .couple-wrap {
+    position: relative;
+  }
+  .inlaws-row {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 48px);
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px;
+  }
+  .inlaw-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+    fill: none;
+    stroke: var(--join);
+    stroke-width: 2;
+  }
   .couple {
     display: flex;
     align-items: center;

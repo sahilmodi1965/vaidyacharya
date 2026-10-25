@@ -1,7 +1,12 @@
 ---
 // One branch of the family tree: a person (and spouse), then their children, drawn recursively.
-const { person } = Astro.props;
+// `inlaws` (top row only): a spouse's parents, drawn as a couple to the left of the root at the same level.
+// `hoisted`: ids of spouses whose parents are drawn in that top row instead of above them.
+const { person, inlaws = [], hoisted = [] } = Astro.props;
 const count = (p: any) => p.publications?.length ?? 0;
+// A spouse whose parents are up in the top row goes first, so the line down to them doesn't cross the couple's own line.
+const pair = [person, person.spouse].filter(Boolean);
+if (hoisted.includes(person.spouse?.id)) pair.reverse();
 ---
 
 <li>
@@ -13,34 +18,53 @@ const count = (p: any) => p.publications?.length ?? 0;
       </span>
     </div>
   ) : (
-    <div class="couple">
-      {[person, person.spouse].filter(Boolean).map((p, i) => (
-        <>
-          {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
-          <div class="person">
-            {p.parents?.length > 0 && (
-              <div class="parents">
-                {p.parents.map((pa: any) => (
-                  <button type="button" class="who parent" data-person={pa.id} aria-haspopup="dialog">
+    <div class="couple-wrap">
+      {inlaws.length > 0 && (
+        <div class="inlaws-row">
+          {inlaws.map((g: any) => (
+            <div class="couple inlaws" data-joins={g.child}>
+              {g.parents.map((pa: any, i: number) => (
+                <>
+                  {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
+                  <button type="button" class="who spouse" data-person={pa.id} aria-haspopup="dialog">
                     <span class="name">{pa.name}</span>
                     {pa.role && <span class="role">{pa.role}</span>}
                   </button>
-                ))}
-              </div>
-            )}
-            <button type="button" class:list={['who', { spouse: i === 1 }]} data-person={p.id} aria-haspopup="dialog">
-              <span class="name">{p.name}</span>
-              {p.role && <span class="role">{p.role}</span>}
-              {count(p) > 0 && <span class="pubs">{count(p)} publication{count(p) === 1 ? '' : 's'}</span>}
-            </button>
-          </div>
-        </>
-      ))}
+                </>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+      <div class="couple">
+        {pair.map((p, i) => (
+          <>
+            {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
+            <div class="person">
+              {p.parents?.length > 0 && !hoisted.includes(p.id) && (
+                <div class="parents">
+                  {p.parents.map((pa: any) => (
+                    <button type="button" class="who parent" data-person={pa.id} aria-haspopup="dialog">
+                      <span class="name">{pa.name}</span>
+                      {pa.role && <span class="role">{pa.role}</span>}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <button type="button" class:list={['who', { spouse: p !== person }]} data-person={p.id} aria-haspopup="dialog">
+                <span class="name">{p.name}</span>
+                {p.role && <span class="role">{p.role}</span>}
+                {count(p) > 0 && <span class="pubs">{count(p)} publication{count(p) === 1 ? '' : 's'}</span>}
+              </button>
+            </div>
+          </>
+        ))}
+      </div>
     </div>
   )}
   {person.children?.length > 0 && (
     <ul>
-      {person.children.map((c: any) => <Astro.self person={c} />)}
+      {person.children.map((c: any) => <Astro.self person={c} hoisted={hoisted} />)}
     </ul>
   )}
 </li>

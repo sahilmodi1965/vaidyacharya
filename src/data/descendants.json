@@ -1330,7 +1330,30 @@
             "name": "Chandrika",
             "role": "Granddaughter",
             "note": "Edited the Trust’s writing about her grandfather.",
-            "publications": [],
+            "publications": [
+              {
+                "title": "Rama: The Human Expression of the Divine",
+                "venue": "Book · Vakils, Feffer and Simons (ISBN 978-81-8462-138-9)",
+                "year": "2017",
+                "url": "https://www.bagchee.com/books/BB108332/rama-the-human-expression-of-the-divine"
+              },
+              {
+                "title": "Adi Sankaracarya’s Bhaja Govindam: Follow Your Heart",
+                "venue": "Book: transliteration, translation and commentary · Vakils, Feffer and Simons, 239 pages (ISBN 978-81-8462-001-6)",
+                "year": "2008",
+                "url": "https://www.amazon.com/dp/8184620012"
+              },
+              {
+                "title": "Atma Siddhi: In Search of the Soul",
+                "venue": "Book: translation from the Gujarati of Srimad Rajchandraji · Vakils, Feffer and Simons, 347 pages (ISBN 978-81-87111-82-5)",
+                "year": "2006",
+                "url": "https://www.amazon.com/dp/8187111828"
+              },
+              {
+                "title": "Exercises in Education to Creativity",
+                "venue": "Book · Don Bosco’s Tej Prasarini, Mumbai (her first book)"
+              }
+            ],
             "children": [
               {
                 "id": "dharini",

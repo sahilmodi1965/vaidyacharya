@@ -90,7 +90,7 @@ const byYear = (pubs: any[]) => {
                     {pub.url ? <a href={link(pub.url)} target="_blank" rel="noopener">{pub.title}</a> : <cite>{pub.title}</cite>}
                     {pub.venue && <span class="pub-meta">{pub.venue}</span>}
                     {pub.pdf && (
-                      <object class="pub-pdf" data={link(pub.pdf)} type="application/pdf" aria-label={pub.title}>
+                      <object class="pub-pdf" data={`${link(pub.pdf)}#view=FitH`} type="application/pdf" aria-label={pub.title}>
                         <p class="fallback">Your browser can’t show the PDF here. <a href={link(pub.pdf)}>Open it (PDF)</a>.</p>
                       </object>
                     )}
@@ -452,6 +452,14 @@ const byYear = (pubs: any[]) => {
   .person-dialog {
     width: min(100% - 32px, 40rem);
     max-height: min(85vh, 40rem);
+  }
+  /* A card with a newspaper page in it opens nearly full screen so the print is readable. */
+  .person-dialog:has(.pub-pdf) {
+    width: calc(100% - 16px);
+    max-width: 80rem;
+    max-height: 96vh;
+  }
+  .person-dialog {
     padding: 28px;
     color: var(--ink);
     background: var(--card);
@@ -536,7 +544,7 @@ const byYear = (pubs: any[]) => {
   .pub-pdf {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 85vh;
     margin-top: 0.75em;
     border: 1px solid var(--line);
   }

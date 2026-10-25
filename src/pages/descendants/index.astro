@@ -54,6 +54,9 @@ const byYear = (pubs: any[]) => {
                 <button type="button" class:list={['who', { spouse: !g.descendant }]} data-person={pa.id} aria-haspopup="dialog">
                   <span class="name">{pa.name}</span>
                   {pa.role && <span class="role">{pa.role}</span>}
+                  {pa.publications?.length > 0 && (
+                    <span class="pubs">{pa.publications.length} publication{pa.publications.length === 1 ? '' : 's'}</span>
+                  )}
                 </button>
               </>
             ))}

@@ -1309,7 +1309,79 @@
                   "id": "srinivasa-iyengar",
                   "name": "P.T. Srinivasa Iyengar",
                   "role": "Singari Ammal’s father",
-                  "publications": []
+                  "publications": [
+                    {
+                      "title": "Outlines of Indian Philosophy",
+                      "venue": "Book · Theosophical Publishing House (Urdu translation, Osmania University, 1932)",
+                      "year": "1909",
+                      "url": "https://archive.org/details/outlinesofindian00srinrich"
+                    },
+                    {
+                      "title": "Death or Life: A Plea for the Vernaculars",
+                      "venue": "Book",
+                      "year": "1909"
+                    },
+                    {
+                      "title": "Longman’s Arithmetic (Arithmethikkulu)",
+                      "venue": "Textbook in modern Telugu · Longmans",
+                      "year": "1911"
+                    },
+                    {
+                      "title": "History of the Indian People: Life in Ancient India in the Age of the Mantras",
+                      "venue": "Book · Srinivasa Varadachari & Co.",
+                      "year": "1912",
+                      "url": "https://archive.org/details/historyofindianp00srinrich"
+                    },
+                    {
+                      "title": "The Shiva-sutra-vimarsini of Kshemaraja",
+                      "venue": "Translation · Editors, Indian Thought",
+                      "year": "1912"
+                    },
+                    {
+                      "title": "Gayathri",
+                      "venue": "Book · Higginbotham & Co.",
+                      "year": "1912"
+                    },
+                    {
+                      "title": "The Stone Age in India",
+                      "venue": "Book · Government Press, Madras",
+                      "year": "1926"
+                    },
+                    {
+                      "title": "History of the Tamils from the Earliest Times to 600 A.D.",
+                      "venue": "Book",
+                      "year": "1929"
+                    },
+                    {
+                      "title": "A Short History of India",
+                      "venue": "Book, with John Willatt · Oxford University Press",
+                      "year": "1929"
+                    },
+                    {
+                      "title": "Bhoja Raja",
+                      "venue": "Book · Methodist Publishing House",
+                      "year": "1931"
+                    },
+                    {
+                      "title": "Advanced History of India (Hindu Period)",
+                      "venue": "Book, published after his death · Hindi Prachar Press",
+                      "year": "1942",
+                      "url": "https://archive.org/details/in.ernet.dli.2015.170295"
+                    },
+                    {
+                      "title": "Pre-Aryan Tamil Culture",
+                      "venue": "Book (reprinted by Asian Educational Services, 1985)"
+                    },
+                    {
+                      "title": "First Steps in Tamil",
+                      "venue": "Book, with S. G. Daniel"
+                    },
+                    {
+                      "title": "Hindudesa Caritra",
+                      "venue": "History of India in Telugu · Macmillan"
+                    }
+                  ],
+                  "note": "Historian, linguist and educationist (1863–1931). Principal of A.V.N. College, Visakhapatnam, and later Reader in Indian History and Archaeology at the University of Madras."
                 }
               ]
             }

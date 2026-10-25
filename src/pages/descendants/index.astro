@@ -137,9 +137,24 @@ const byYear = (pubs: any[]) => {
     });
     root.append(svg);
   };
-  drawInlawLines();
-  document.fonts?.ready.then(drawInlawLines);
-  window.addEventListener('resize', drawInlawLines);
+  // Where the spouse is drawn first, pad the couple's right side so the lines above and below meet the descendant, not the gap between the two.
+  const centreOnDescendant = () => {
+    document.querySelectorAll<HTMLElement>('.couple-wrap[data-anchor]').forEach((wrap) => {
+      wrap.style.marginRight = '';
+      const who = wrap.querySelector<HTMLElement>(`[data-person="${wrap.dataset.anchor}"]`);
+      if (!who) return;
+      const w = wrap.getBoundingClientRect();
+      const b = who.getBoundingClientRect();
+      wrap.style.marginRight = `${Math.max(0, 2 * (b.left + b.width / 2 - w.left) - w.width)}px`;
+    });
+  };
+  const layout = () => {
+    centreOnDescendant();
+    drawInlawLines();
+  };
+  layout();
+  document.fonts?.ready.then(layout);
+  window.addEventListener('resize', layout);
 
   // Clicking the backdrop closes the dialog.
   document.querySelectorAll<HTMLDialogElement>('.person-dialog').forEach((d) => {

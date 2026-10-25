@@ -18,7 +18,7 @@ if (hoisted.includes(person.spouse?.id)) pair.reverse();
       </span>
     </div>
   ) : (
-    <div class="couple-wrap">
+    <div class="couple-wrap" data-anchor={pair[0] !== person ? person.id : undefined}>
       {inlaws.length > 0 && (
         <div class="inlaws-row">
           {inlaws.map((g: any) => (

@@ -1303,7 +1303,15 @@
               "id": "singari",
               "name": "Singari Ammal",
               "role": "Vimala’s mother",
-              "publications": []
+              "publications": [],
+              "parents": [
+                {
+                  "id": "srinivasa-iyengar",
+                  "name": "P.T. Srinivasa Iyengar",
+                  "role": "Singari Ammal’s father",
+                  "publications": []
+                }
+              ]
             }
           ],
           "parentsSide": "left"
@@ -1508,6 +1516,14 @@
         "placeholder": true,
         "name": "Four more children",
         "role": "Names to be added"
+      }
+    ],
+    "parents": [
+      {
+        "id": "vijayaraghavachari",
+        "name": "M. Vijaya­raghavachari",
+        "role": "Duraiswami Aiyangar’s father",
+        "publications": []
       }
     ]
   }

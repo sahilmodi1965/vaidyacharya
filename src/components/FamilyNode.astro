@@ -1,8 +1,8 @@
 ---
 // One branch of the family tree: a person (and spouse), then their children, drawn recursively.
 // A child's spouse's parents ("in-laws") are drawn beside this couple, at the same level, on the
-// side the data gives (`parentsSide`), with a line down to the spouse. Only the root's own spouse
-// keeps their parents drawn directly above them, since there is no row higher up.
+// side the data gives (`parentsSide`), with a line down to the spouse. Parents of the top row
+// itself are drawn by the page, in a row above the tree.
 const { person, root = true } = Astro.props;
 const count = (p: any) => p.publications?.length ?? 0;
 const inlaws = (person.children ?? [])
@@ -52,16 +52,6 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
           <>
             {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
             <div class="person">
-              {root && p.parents?.length > 0 && (
-                <div class="parents">
-                  {p.parents.map((pa: any) => (
-                    <button type="button" class="who parent" data-person={pa.id} aria-haspopup="dialog">
-                      <span class="name">{pa.name}</span>
-                      {pa.role && <span class="role">{pa.role}</span>}
-                    </button>
-                  ))}
-                </div>
-              )}
               <button type="button" class:list={['who', { spouse: p !== person }]} data-person={p.id} aria-haspopup="dialog">
                 <span class="name">{p.name}</span>
                 {p.role && <span class="role">{p.role}</span>}

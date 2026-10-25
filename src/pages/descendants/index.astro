@@ -14,6 +14,17 @@ const walk = (p: any) => {
 };
 walk(family.tree);
 
+// Parents of anyone in the top row (the root couple and the in-laws beside them) go in a row above it.
+const topRow: any[] = [
+  family.tree,
+  family.tree.spouse,
+  ...(family.tree.children ?? []).flatMap((c: any) => c.spouse?.parents ?? []),
+].filter(Boolean);
+const ancestors = topRow
+  .filter((p) => p.parents?.length)
+  .map((p) => ({ child: p.id, descendant: p === family.tree, parents: p.parents }));
+people.push(...ancestors.flatMap((g) => g.parents));
+
 // Publications grouped by year, newest first; undated ones last.
 const byYear = (pubs: any[]) => {
   const groups = new Map<string, any[]>();
@@ -35,6 +46,19 @@ const byYear = (pubs: any[]) => {
   <section class="tree-section">
     <div class="family-tree" tabindex="0" aria-label="Family tree">
       <ul>
+        {ancestors.map((g) => (
+          <div class="couple ancestor" data-joins={g.child}>
+            {g.parents.map((pa: any, i: number) => (
+              <>
+                {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
+                <button type="button" class:list={['who', { spouse: !g.descendant }]} data-person={pa.id} aria-haspopup="dialog">
+                  <span class="name">{pa.name}</span>
+                  {pa.role && <span class="role">{pa.role}</span>}
+                </button>
+              </>
+            ))}
+          </div>
+        ))}
         <FamilyNode person={family.tree} />
       </ul>
     </div>
@@ -111,7 +135,7 @@ const byYear = (pubs: any[]) => {
   // A link like /descendants/#maya opens that person's publications.
   const id = location.hash.slice(1);
   if (id) document.querySelector<HTMLDialogElement>(`#person-${CSS.escape(id)}`)?.showModal();
-  // Draw a line from each in-law couple in the top row down to their child in the tree.
+  // Draw a line from each in-law or ancestor box down to their child in the tree.
   const drawInlawLines = () => {
     const root = document.querySelector<HTMLElement>('.family-tree > ul');
     if (!root) return;
@@ -120,7 +144,7 @@ const byYear = (pubs: any[]) => {
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.classList.add('inlaw-lines');
     svg.setAttribute('aria-hidden', 'true');
-    root.querySelectorAll<HTMLElement>('.inlaws[data-joins]').forEach((from) => {
+    root.querySelectorAll<HTMLElement>('.inlaws[data-joins], .ancestor[data-joins]').forEach((from) => {
       const to = root.querySelector<HTMLElement>(`[data-person="${from.dataset.joins}"]`);
       const toCouple = to?.closest<HTMLElement>('.couple');
       if (!to || !toCouple) return;
@@ -164,9 +188,24 @@ const byYear = (pubs: any[]) => {
     const tallest = Math.max(...boxes.map((b) => b.getBoundingClientRect().height));
     boxes.forEach((b) => (b.style.minHeight = `${tallest}px`));
   };
+  // Ancestors sit in a row above the tree, each centred over their child.
+  const placeAncestors = () => {
+    const root = document.querySelector<HTMLElement>('.family-tree > ul');
+    const boxes = [...document.querySelectorAll<HTMLElement>('.family-tree .ancestor')];
+    if (!root || !boxes.length) return;
+    root.style.paddingTop = `${Math.max(...boxes.map((b) => b.offsetHeight)) + 56}px`;
+    const box = root.getBoundingClientRect();
+    boxes.forEach((anc) => {
+      const child = root.querySelector<HTMLElement>(`.couple:not(.ancestor) [data-person="${anc.dataset.joins}"]`);
+      if (!child) return;
+      const c = child.getBoundingClientRect();
+      anc.style.left = `${c.left + c.width / 2 - box.left - anc.offsetWidth / 2}px`;
+    });
+  };
   const layout = () => {
     evenHeights();
     centreOnDescendant();
+    placeAncestors();
     drawInlawLines();
   };
   layout();
@@ -300,6 +339,10 @@ const byYear = (pubs: any[]) => {
   .inlaws-row.right {
     left: calc(100% + 48px);
   }
+  .ancestor {
+    position: absolute;
+    top: 0;
+  }
   .inlaw-lines {
     position: absolute;
     inset: 0;
@@ -325,48 +368,6 @@ const byYear = (pubs: any[]) => {
     border-style: dashed;
     background: transparent;
     box-shadow: none;
-  }
-  /* A spouse's parents: two small cards above them, joined by a bracket line. */
-  .parents {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    margin-bottom: 26px;
-  }
-  .parents::before {
-    content: '';
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    bottom: -14px;
-    height: 14px;
-    border: 2px solid var(--join, var(--line));
-    border-top: 0;
-    border-radius: 0 0 8px 8px;
-  }
-  .parents::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -26px;
-    height: 12px;
-    border-left: 2px solid var(--line);
-  }
-  button.who.parent {
-    min-width: 0;
-    max-width: 9rem;
-    flex: 1;
-    padding: 8px 8px;
-    align-content: center;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-top: 3px solid var(--accent-2);
-    border-radius: 10px;
-    box-shadow: 0 10px 24px -20px rgb(42 34 28 / 0.6);
-  }
-  button.who.parent .name {
-    font-size: var(--step--1);
   }
   .person {
     display: flex;

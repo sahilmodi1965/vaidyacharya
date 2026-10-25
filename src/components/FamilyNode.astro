@@ -66,6 +66,7 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
                 <span class="name">{p.name}</span>
                 {p.role && <span class="role">{p.role}</span>}
                 {count(p) > 0 && <span class="pubs">{count(p)} publication{count(p) === 1 ? '' : 's'}</span>}
+                {p.mentions?.filter((m: any) => m.inBox).map((m: any) => <span class="pubs">{m.inBox}</span>)}
               </button>
             </div>
           </>

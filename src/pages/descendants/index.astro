@@ -87,8 +87,13 @@ const byYear = (pubs: any[]) => {
               <ul class="pub-list">
                 {pubs.map((pub: any) => (
                   <li>
-                    {pub.url ? <a href={pub.url} target="_blank" rel="noopener">{pub.title}</a> : <cite>{pub.title}</cite>}
+                    {pub.url ? <a href={link(pub.url)} target="_blank" rel="noopener">{pub.title}</a> : <cite>{pub.title}</cite>}
                     {pub.venue && <span class="pub-meta">{pub.venue}</span>}
+                    {pub.pdf && (
+                      <object class="pub-pdf" data={link(pub.pdf)} type="application/pdf" aria-label={pub.title}>
+                        <p class="fallback">Your browser can’t show the PDF here. <a href={link(pub.pdf)}>Open it (PDF)</a>.</p>
+                      </object>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -527,6 +532,13 @@ const byYear = (pubs: any[]) => {
     display: block;
     font-style: italic;
     color: var(--muted);
+  }
+  .pub-pdf {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    margin-top: 0.75em;
+    border: 1px solid var(--line);
   }
   .more {
     margin: 1em 0 0;

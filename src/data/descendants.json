@@ -50,6 +50,12 @@
             "linkLabel": "About Vivek",
             "publications": [
               {
+                "title": "Using 60 GHz for New Indoor Wireless Backbone Networks",
+                "venue": "EE Times (reprinted in EE Times Asia)",
+                "year": "2024",
+                "url": "https://www.eetimes.com/using-60-ghz-for-new-indoor-wireless-backbone-networks/"
+              },
+              {
                 "title": "A study of the integrated optic monochromator",
                 "venue": "M.S. thesis, Electrical Engineering, Cornell University",
                 "year": "1977"

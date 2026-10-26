@@ -45,7 +45,13 @@
             "note": "Co-founder of the Vaidyacharya Trust.",
             "link": "/about/",
             "linkLabel": "About Vivek",
-            "publications": [],
+            "publications": [
+              {
+                "title": "A study of the integrated optic monochromator",
+                "venue": "M.S. thesis, Electrical Engineering, Cornell University",
+                "year": "1977"
+              }
+            ],
             "spouse": {
               "id": "nilima",
               "name": "Nilima Ragavan",

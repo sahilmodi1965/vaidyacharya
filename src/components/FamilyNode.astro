@@ -3,6 +3,10 @@
 // A child's spouse's parents ("in-laws") are drawn beside this couple, at the same level, on the
 // side the data gives (`parentsSide`), with a line down to the spouse. Parents of the top row
 // itself are drawn by the page, in a row above the tree.
+import { Image } from 'astro:assets';
+import { img } from '../lib/images';
+import { link } from '../lib/url';
+
 const { person, root = true } = Astro.props;
 const count = (p: any) => p.publications?.length ?? 0;
 const inlaws = (person.children ?? [])
@@ -53,6 +57,7 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
             {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
             <div class="person">
               <button type="button" class:list={['who', { spouse: p !== person }]} data-person={p.id} aria-haspopup="dialog">
+                {p.portrait && <Image class="box-portrait" src={img(p.portrait)} alt="" widths={[96, 192]} sizes="96px" />}
                 <span class="name">{p.name}</span>
                 {p.role && <span class="role">{p.role}</span>}
                 {p.publications?.filter((pub: any) => pub.inBox).map((pub: any) => <span class="pubs">{pub.inBox}</span>)}
@@ -61,6 +66,7 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
                 )}
                 {p.mentions?.filter((m: any) => m.inBox).map((m: any) => <span class="pubs">{m.inBox}</span>)}
               </button>
+              {p.biography && <a class="bio-link" href={link('/descendants/#biography')} data-biography aria-haspopup="dialog">Biography</a>}
             </div>
           </>
         ))}

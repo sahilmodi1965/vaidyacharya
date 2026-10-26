@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import FamilyNode from '../../components/FamilyNode.astro';
+import Biography from '../../components/Biography.astro';
 import family from '../../data/descendants.json';
 import { link } from '../../lib/url';
 
@@ -132,6 +133,13 @@ const byYear = (pubs: any[]) => {
       {p.link && <p class="more"><a href={link(p.link)}>{p.linkLabel ?? 'Read more'}</a></p>}
     </dialog>
   ))}
+
+  <dialog class="person-dialog bio-dialog" id="biography" aria-labelledby="biography-title">
+    <form method="dialog">
+      <button class="close" aria-label="Close">×</button>
+    </form>
+    <Biography />
+  </dialog>
 </Base>
 
 <script>
@@ -140,9 +148,24 @@ const byYear = (pubs: any[]) => {
       document.querySelector<HTMLDialogElement>(`#person-${btn.dataset.person}`)?.showModal();
     });
   });
-  // A link like /descendants/#maya opens that person's publications.
+  // The Biography link in Pandit Duraiswami Aiyangar's box (and in his card) opens his biography.
+  const bio = document.querySelector<HTMLDialogElement>('#biography');
+  const openBio = (at?: string) => {
+    document.querySelectorAll<HTMLDialogElement>('dialog[open]').forEach((d) => d.close());
+    bio?.showModal();
+    if (bio) bio.scrollTop = 0;
+    if (at) bio?.querySelector(`#${at}`)?.scrollIntoView();
+  };
+  document.querySelectorAll<HTMLAnchorElement>('[data-biography], a[href$="/descendants/#biography"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      openBio();
+    });
+  });
+  // A link like /descendants/#maya opens that person's publications; #biography (or #bibliography) opens his biography.
   const id = location.hash.slice(1);
-  if (id) document.querySelector<HTMLDialogElement>(`#person-${CSS.escape(id)}`)?.showModal();
+  if (id === 'biography' || id === 'bibliography') openBio(id === 'bibliography' ? id : undefined);
+  else if (id) document.querySelector<HTMLDialogElement>(`#person-${CSS.escape(id)}`)?.showModal();
   // Draw a line from each in-law or ancestor box down to their child in the tree.
   const drawInlawLines = () => {
     const root = document.querySelector<HTMLElement>('.family-tree > ul');
@@ -250,6 +273,35 @@ const byYear = (pubs: any[]) => {
 </style>
 
 <style is:global>
+  .box-portrait {
+    width: 72px;
+    height: 84px;
+    margin: 2px auto 6px;
+    object-fit: cover;
+    border-radius: 50% / 42%;
+  }
+  .bio-link {
+    align-self: center;
+    margin-top: 6px;
+    padding: 2px 12px;
+    font-size: var(--step--1);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  .bio-link:hover,
+  .bio-link:focus-visible {
+    color: var(--card);
+    background: var(--accent);
+  }
+  .person-dialog.bio-dialog {
+    width: calc(100% - 16px);
+    max-width: 64rem;
+    max-height: 96vh;
+  }
+  .bio-dialog .wrap {
+    padding-inline: 0;
+  }
   /* Top-down family tree. Each <li> draws its own elbow up to the parent's line. */
   .family-tree {
     --join: var(--line);

@@ -1,0 +1,173 @@
+---
+// Pandit Duraiswami Aiyangar's biography and bibliography, shown from his box on the Family page.
+import { Image } from 'astro:assets';
+import content from '../data/content.json';
+import bio from '../data/biography.json';
+import { slug } from '../lib/site';
+import { img } from '../lib/images';
+
+const { home } = content;
+const { bibliography } = bio;
+---
+
+<section class="page-head wrap head">
+  <Image class="portrait" src={img(home.portrait)} alt="Portrait of Pandit Duraiswami Aiyangar" widths={[200, 400]} sizes="200px" loading="lazy" />
+  <div>
+    <span class="eyebrow">Biography</span>
+    <h2 class="bio-title" id="biography-title">{bio.heading}</h2>
+    <p class="dates">{bio.dates}</p>
+    <nav class="toc" aria-label="On this page">
+      {bio.chapters.map((c) => <a href={`#${slug(c.heading)}`}>{c.heading}</a>)}
+      <a href="#bibliography">Bibliography</a>
+    </nav>
+  </div>
+</section>
+
+<article class="wrap prose story">
+  {bio.chapters.map((c, i) => (
+    <section id={slug(c.heading)} class="chapter">
+      <h2>{c.heading}</h2>
+      {c.paragraphs.map((p, j) => <p class={i === 0 && j === 0 ? 'opening' : undefined} set:html={p} />)}
+      {c.quote && (
+        <blockquote class="pull">
+          <p>{c.quote.text}</p>
+          <cite set:html={c.quote.cite} />
+        </blockquote>
+      )}
+      {c.after?.map((p) => <p set:html={p} />)}
+    </section>
+  ))}
+</article>
+
+<section id="bibliography" class="section">
+  <div class="wrap">
+    <span class="eyebrow">Bibliography</span>
+    <h2 class="bib-title">{bibliography.heading}</h2>
+    <p class="bib-intro">{bibliography.intro}</p>
+    {bibliography.groups.map((g) => (
+      <section class="group">
+        <h3>{g.heading}</h3>
+        <ol>
+          {g.items.map((it) => (
+            <li>
+              <span set:html={it.text} />
+              {it.note && <span class="note" set:html={it.note} />}
+            </li>
+          ))}
+        </ol>
+        {g.footnote && <p class="footnote">{g.footnote}</p>}
+      </section>
+    ))}
+  </div>
+</section>
+
+<style>
+  .bio-title {
+    font-size: var(--step-4);
+  }
+  .head {
+    padding-block: 0 16px;
+    display: grid;
+    gap: 24px 40px;
+    align-items: center;
+  }
+  @media (min-width: 720px) {
+    .head {
+      grid-template-columns: 200px 1fr;
+    }
+  }
+  .portrait {
+    width: 200px;
+    max-width: 60%;
+    border-radius: 50% / 42%;
+    box-shadow: 0 18px 40px -24px rgb(42 34 28 / 0.5);
+  }
+  .dates {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 1.2em;
+  }
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-size: var(--step--1);
+  }
+  .story {
+    padding-bottom: clamp(32px, 6vw, 64px);
+  }
+  .chapter {
+    padding-top: clamp(24px, 4vw, 40px);
+    scroll-margin-top: 16px;
+  }
+  .chapter h2 {
+    font-size: var(--step-2);
+  }
+  .opening::first-letter {
+    float: left;
+    font-family: var(--font-display);
+    font-size: 3.4em;
+    line-height: 0.85;
+    padding: 0.08em 0.1em 0 0;
+    color: var(--accent);
+  }
+  .pull {
+    margin: 1.6em 0;
+    padding: 0.4em 0 0.4em 1.4em;
+    border-left: 3px solid var(--accent-2);
+  }
+  .pull p {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-style: italic;
+    line-height: 1.45;
+    margin-bottom: 0.6em;
+  }
+  .pull cite {
+    font-style: normal;
+    font-size: var(--step--1);
+    color: var(--muted);
+  }
+  .bib-title {
+    max-width: 24ch;
+  }
+  .bib-intro {
+    max-width: var(--measure);
+    color: var(--muted);
+  }
+  .group {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  .group h3 {
+    font-size: var(--step-1);
+    color: var(--accent);
+  }
+  ol {
+    max-width: var(--measure);
+    margin: 0;
+    padding-left: 1.4em;
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+  li {
+    padding: 8px 0 8px 4px;
+  }
+  li::marker {
+    color: var(--muted);
+  }
+  .note {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+  }
+  .footnote {
+    margin-top: 12px;
+    font-size: var(--step--1);
+    font-style: italic;
+    color: var(--muted);
+  }
+</style>

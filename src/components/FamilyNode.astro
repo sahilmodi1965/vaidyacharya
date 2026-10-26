@@ -55,7 +55,7 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
             {i === 1 && <span class="amp" aria-hidden="true">&amp;</span>}
             <div class="person">
               <button type="button" class:list={['who', { spouse: p !== person }]} data-person={p.id} aria-haspopup="dialog">
-                <span class="name">{p.name}</span>
+                <span class="name">{p.boxName ?? p.name}</span>
                 {p.role && <span class="role">{p.role}</span>}
                 {p.publications?.filter((pub: any) => pub.inBox).map((pub: any) => <span class="pubs">{pub.inBox}</span>)}
                 {count(p) > 0 && !p.publications.every((pub: any) => pub.inBox) && (

@@ -224,12 +224,20 @@ const byYear = (pubs: any[]) => {
       else wrap.style.marginLeft = `${-pad}px`;
     });
   };
-  // Every person's box is the same size: as tall as the tallest one.
+  // Every person's box is the same size: as tall as the tallest one. A box with links under the
+  // name (Biography · Publications) counts them in that height, centred together with the name.
   const evenHeights = () => {
     const boxes = [...document.querySelectorAll<HTMLElement>('.family-tree .who')];
-    boxes.forEach((b) => (b.style.minHeight = ''));
-    const tallest = Math.max(...boxes.map((b) => b.getBoundingClientRect().height));
-    boxes.forEach((b) => (b.style.minHeight = `${tallest}px`));
+    const withLinks = [...document.querySelectorAll<HTMLElement>('.family-tree .person:has(.box-links)')];
+    [...boxes, ...withLinks].forEach((b) => (b.style.minHeight = ''));
+    const tallest = Math.max(
+      ...boxes.filter((b) => !b.parentElement?.querySelector('.box-links')).map((b) => b.getBoundingClientRect().height),
+      ...withLinks.map((p) => p.getBoundingClientRect().height),
+    );
+    boxes.forEach((b) => {
+      if (!b.parentElement?.querySelector('.box-links')) b.style.minHeight = `${tallest}px`;
+    });
+    withLinks.forEach((p) => (p.style.minHeight = `${tallest}px`));
   };
   // Ancestors sit in a row above the tree, each centred over their child.
   const placeAncestors = () => {
@@ -287,12 +295,15 @@ const byYear = (pubs: any[]) => {
 <style is:global>
   /* Biography · Publications under his name, styled like the "14 publications" line in other boxes
      and tucked into the box's bottom padding so his box stays the same height as the rest. */
+  .person:has(.box-links) .who {
+    flex: 1;
+  }
   .box-links {
     display: flex;
     justify-content: center;
     gap: 0.5em;
-    margin-top: -12px;
-    padding-bottom: 0;
+    margin-top: -8px;
+    padding-bottom: 8px;
     font-size: 0.75rem;
     line-height: 1.3;
   }

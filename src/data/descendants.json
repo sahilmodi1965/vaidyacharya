@@ -5,6 +5,7 @@
   "tree": {
     "id": "duraiswami",
     "name": "Pandit Duraiswami Aiyangar",
+    "boxName": "Pt. Duraiswami Aiyangar",
     "role": "1888 – 1956",
     "biography": true,
     "bibliography": true,
@@ -1601,7 +1602,7 @@
     "parents": [
       {
         "id": "vijayaraghavachari",
-        "name": "M. Vijaya­raghavachari",
+        "name": "M. Vijaya­raghavachar",
         "role": "Duraiswami Aiyangar’s father",
         "publications": []
       }

@@ -1293,11 +1293,65 @@
             ],
             "mentions": [
               {
+                "title": "Airvine gets $6.2M in funding for indoor wireless at 60GHz",
+                "venue": "Light Reading",
+                "year": "2024",
+                "url": "https://www.lightreading.com/it-infrastructure/airvine-gets-6-2m-in-funding-for-indoor-wireless-at-60ghz"
+              },
+              {
+                "title": "Breakthrough 60 GHz tech from Airvine blasts through walls to make cabling redundant",
+                "venue": "Wi-Fi NOW · Claus Hetting",
+                "year": "2020",
+                "url": "https://wifinowglobal.com/news-and-blog/breakthrough-60-ghz-tech-from-airvine-blasts-through-walls-to-make-cabling-redundant/"
+              },
+              {
+                "title": "Billions in the Bubble: Siara CEO Vivek Ragavan (Part 4)",
+                "venue": "Sramana Mitra on Strategy · interview series",
+                "year": "2009",
+                "url": "https://www.sramanamitra.com/2009/03/14/billions-in-the-bubble-siara-ceo-vivek-ragavan-part-4/"
+              },
+              {
+                "title": "Vivek Ragavan – Atrica Inc",
+                "venue": "The Wall Street Transcript · interview",
+                "year": "2004",
+                "url": "https://www.twst.com/interview/vivek-ragavan-atrica-inc"
+              },
+              {
+                "title": "Atrica Plugs Into France Telecom",
+                "venue": "Light Reading · Mary Jander",
+                "year": "2002",
+                "url": "https://www.lightreading.com/cable-technology/atrica-plugs-into-france-telecom"
+              },
+              {
+                "title": "Ex-Redback Chief Joins Atrica",
+                "venue": "Light Reading",
+                "year": "2001",
+                "url": "https://www.lightreading.com/business-management/ex-redback-chief-joins-atrica"
+              },
+              {
+                "title": "Redback Names New Execs",
+                "venue": "Light Reading",
+                "year": "2000",
+                "url": "https://www.lightreading.com/business-management/redback-names-new-execs"
+              },
+              {
                 "title": "Ramp Champs: Redback Networks, No. 7 of the 20 best-managed fast-growing tech companies",
                 "venue": "Forbes ASAP · Clint Willis",
                 "year": "2000",
                 "url": "https://www.forbes.com/asap/2000/0403/084_print.html",
                 "inBox": "Forbes ASAP · 2000"
+              },
+              {
+                "title": "Redback/Siara Merger Complete",
+                "venue": "Light Reading",
+                "year": "2000",
+                "url": "https://www.lightreading.com/network-technology/redback-siara-merger-complete"
+              },
+              {
+                "title": "Redback pays $4.3B for company still in prototype stage",
+                "venue": "EE Times · Loring Wirbel",
+                "year": "1999",
+                "url": "https://www.eetimes.com/redback-pays-4-3b-for-company-still-in-prototype-stage/"
               }
             ]
           }

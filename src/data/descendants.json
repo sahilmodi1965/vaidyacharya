@@ -29,7 +29,7 @@
         "children": [
           {
             "id": "vanaja",
-            "name": "Vanaja Ragavan",
+            "name": "Dr. Vanaja Ragavan",
             "role": "Granddaughter",
             "publications": [
               {
@@ -57,7 +57,7 @@
             ],
             "spouse": {
               "id": "nilima",
-              "name": "Nilima Ragavan",
+              "name": "Dr. Nilima Ragavan",
               "role": "Wife",
               "publications": [
                 {
@@ -124,7 +124,7 @@
             "children": [
               {
                 "id": "maya",
-                "name": "Maya Ragavan",
+                "name": "Dr. Maya Ragavan",
                 "role": "Great-granddaughter",
                 "publications": [
                   {
@@ -927,7 +927,7 @@
               },
               {
                 "id": "meera",
-                "name": "Meera Ragavan",
+                "name": "Dr. Meera Ragavan",
                 "role": "Great-granddaughter",
                 "publications": [
                   {
@@ -1316,7 +1316,7 @@
               "parents": [
                 {
                   "id": "srinivasa-iyengar",
-                  "name": "P.T. Srinivasa Iyengar",
+                  "name": "Dr. P.T. Srinivasa Iyengar",
                   "role": "Singari Ammal’s father",
                   "publications": [
                     {

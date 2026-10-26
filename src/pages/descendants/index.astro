@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import FamilyNode from '../../components/FamilyNode.astro';
 import Biography from '../../components/Biography.astro';
+import Bibliography from '../../components/Bibliography.astro';
 import family from '../../data/descendants.json';
 import { link } from '../../lib/url';
 
@@ -140,6 +141,13 @@ const byYear = (pubs: any[]) => {
     </form>
     <Biography />
   </dialog>
+
+  <dialog class="person-dialog bio-dialog" id="publications" aria-labelledby="publications-title">
+    <form method="dialog">
+      <button class="close" aria-label="Close">×</button>
+    </form>
+    <Bibliography />
+  </dialog>
 </Base>
 
 <script>
@@ -148,23 +156,27 @@ const byYear = (pubs: any[]) => {
       document.querySelector<HTMLDialogElement>(`#person-${btn.dataset.person}`)?.showModal();
     });
   });
-  // The Biography link in Pandit Duraiswami Aiyangar's box (and in his card) opens his biography.
-  const bio = document.querySelector<HTMLDialogElement>('#biography');
-  const openBio = (at?: string) => {
+  // The Biography and Publications links in Pandit Duraiswami Aiyangar's box (and in his card) open those panels.
+  const panels = ['biography', 'publications'];
+  const openPanel = (name: string) => {
+    const panel = document.querySelector<HTMLDialogElement>(`dialog#${name}`);
     document.querySelectorAll<HTMLDialogElement>('dialog[open]').forEach((d) => d.close());
-    bio?.showModal();
-    if (bio) bio.scrollTop = 0;
-    if (at) bio?.querySelector(`#${at}`)?.scrollIntoView();
+    panel?.showModal();
+    if (panel) panel.scrollTop = 0;
   };
-  document.querySelectorAll<HTMLAnchorElement>('[data-biography], a[href$="/descendants/#biography"]').forEach((a) => {
-    a.addEventListener('click', (e) => {
-      e.preventDefault();
-      openBio();
+  panels.forEach((name) => {
+    document.querySelectorAll<HTMLAnchorElement>(`[data-panel="${name}"], a[href$="/descendants/#${name}"]`).forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        openPanel(name);
+      });
     });
   });
-  // A link like /descendants/#maya opens that person's publications; #biography (or #bibliography) opens his biography.
+  // A link like /descendants/#maya opens that person's publications; #biography or #publications
+  // (and the old #bibliography) open his panels.
   const id = location.hash.slice(1);
-  if (id === 'biography' || id === 'bibliography') openBio(id === 'bibliography' ? id : undefined);
+  if (panels.includes(id)) openPanel(id);
+  else if (id === 'bibliography') openPanel('publications');
   else if (id) document.querySelector<HTMLDialogElement>(`#person-${CSS.escape(id)}`)?.showModal();
   // Draw a line from each in-law or ancestor box down to their child in the tree.
   const drawInlawLines = () => {
@@ -273,11 +285,15 @@ const byYear = (pubs: any[]) => {
 </style>
 
 <style is:global>
-  .bio-link {
-    align-self: center;
+  .box-links {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
     margin-top: 6px;
-    padding: 2px 12px;
-    font-size: var(--step--1);
+  }
+  .bio-link {
+    padding: 1px 8px;
+    font-size: 0.78rem;
     border: 1px solid var(--accent);
     border-radius: 999px;
     text-decoration: none;
@@ -294,6 +310,11 @@ const byYear = (pubs: any[]) => {
   }
   .bio-dialog .wrap {
     padding-inline: 0;
+  }
+  .person-dialog.bio-dialog h3 {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
   }
   /* Top-down family tree. Each <li> draws its own elbow up to the parent's line. */
   .family-tree {

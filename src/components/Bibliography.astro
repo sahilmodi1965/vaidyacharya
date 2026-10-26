@@ -1,0 +1,71 @@
+---
+// Pandit Duraiswami Aiyangar's publications (his bibliography), shown from his box on the Family page.
+import bio from '../data/biography.json';
+
+const { bibliography } = bio;
+---
+
+<section id="bibliography" class="bib">
+  <div class="wrap">
+    <span class="eyebrow">Publications</span>
+    <h2 class="bib-title" id="publications-title">{bibliography.heading}</h2>
+    <p class="bib-intro">{bibliography.intro}</p>
+    {bibliography.groups.map((g) => (
+      <section class="group">
+        <h3>{g.heading}</h3>
+        <ol>
+          {g.items.map((it) => (
+            <li>
+              <span set:html={it.text} />
+              {it.note && <span class="note" set:html={it.note} />}
+            </li>
+          ))}
+        </ol>
+        {g.footnote && <p class="footnote">{g.footnote}</p>}
+      </section>
+    ))}
+  </div>
+</section>
+
+<style>
+  .bib-title {
+    max-width: 24ch;
+  }
+  .bib-intro {
+    max-width: var(--measure);
+    color: var(--muted);
+  }
+  .group {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  .group h3 {
+    font-size: var(--step-1);
+    color: var(--accent);
+  }
+  ol {
+    max-width: var(--measure);
+    margin: 0;
+    padding-left: 1.4em;
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+  li {
+    padding: 8px 0 8px 4px;
+  }
+  li::marker {
+    color: var(--muted);
+  }
+  .note {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+  }
+  .footnote {
+    margin-top: 12px;
+    font-size: var(--step--1);
+    font-style: italic;
+    color: var(--muted);
+  }
+</style>

@@ -14,7 +14,7 @@ const to = link('/descendants/#biography');
     <link rel="canonical" href={to} />
     <title>Biography</title>
     <script is:inline define:vars={{ to }}>
-      location.replace(location.hash === '#bibliography' ? to.replace('#biography', '#bibliography') : to);
+      location.replace(location.hash === '#bibliography' ? to.replace('#biography', '#publications') : to);
     </script>
   </head>
   <body>

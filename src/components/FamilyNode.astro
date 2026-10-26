@@ -63,7 +63,12 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
                 )}
                 {p.mentions?.filter((m: any) => m.inBox).map((m: any) => <span class="pubs">{m.inBox}</span>)}
               </button>
-              {p.biography && <a class="bio-link" href={link('/descendants/#biography')} data-biography aria-haspopup="dialog">Biography</a>}
+              {(p.biography || p.bibliography) && (
+                <span class="box-links">
+                  {p.biography && <a class="bio-link" href={link('/descendants/#biography')} data-panel="biography" aria-haspopup="dialog">Biography</a>}
+                  {p.bibliography && <a class="bio-link" href={link('/descendants/#publications')} data-panel="publications" aria-haspopup="dialog">Publications</a>}
+                </span>
+              )}
             </div>
           </>
         ))}

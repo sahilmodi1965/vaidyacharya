@@ -224,6 +224,21 @@ const byYear = (pubs: any[]) => {
       else wrap.style.marginLeft = `${-pad}px`;
     });
   };
+  // In-law boxes sit outside the flow, so widen their branch (equally on both sides, to stay
+  // centred under its line) until the neighbouring sibling's box is at least 48px away.
+  const makeRoomForInlaws = () => {
+    document.querySelectorAll<HTMLElement>('.family-tree li').forEach((li) => (li.style.paddingLeft = li.style.paddingRight = ''));
+    document.querySelectorAll<HTMLElement>('.inlaws-row').forEach((row) => {
+      const li = row.closest<HTMLElement>('li');
+      const right = row.classList.contains('right');
+      const next = (right ? li?.nextElementSibling : li?.previousElementSibling)?.querySelector<HTMLElement>(':scope > .couple-wrap, :scope > .couple');
+      if (!li || !next) return;
+      const r = row.getBoundingClientRect();
+      const n = next.getBoundingClientRect();
+      const need = right ? r.right + 48 - n.left : n.right + 48 - r.left;
+      if (need > 0) li.style.paddingLeft = li.style.paddingRight = `${10 + need}px`;
+    });
+  };
   // Every person's box is the same size: as tall as the tallest one. A box with links under the
   // name (Biography · Publications) counts them in that height, centred together with the name.
   const evenHeights = () => {
@@ -256,6 +271,7 @@ const byYear = (pubs: any[]) => {
   const layout = () => {
     evenHeights();
     centreOnDescendant();
+    makeRoomForInlaws();
     placeAncestors();
     drawInlawLines();
   };

@@ -41,6 +41,7 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
                       {pa.patents?.map((pt: any) => (
                         <span class="pubs">{pt.title || `Patent ${pt.number}`} · {pt.filed}</span>
                       ))}
+                      {count(pa) > 0 && <span class="pubs">{count(pa)} publication{count(pa) === 1 ? '' : 's'}</span>}
                     </button>
                   </>
                 ))}

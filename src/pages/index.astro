@@ -79,7 +79,7 @@ const byYear = (pubs: any[]) => {
       </form>
       {p.role && <span class="eyebrow">{p.role}</span>}
       <h2 id={`person-${p.id}-name`}>{p.name}</h2>
-      {p.note && <p class="note">{p.note}</p>}
+      {p.note && <p class="note">{p.note}{p.noteSource && <> <a href={p.noteSource.url} target="_blank" rel="noopener">{p.noteSource.label}</a></>}</p>}
       {!(p.patents?.length > 0 && p.publications.length === 0) && <h3>Publications</h3>}
       {p.patents?.length > 0 && p.publications.length === 0 ? null : p.publications.length > 0 ? (
         <>

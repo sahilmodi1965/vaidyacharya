@@ -1372,7 +1372,73 @@
               "id": "alagasingam",
               "name": "Dr. Alagasingam Vasudevan",
               "role": "Vimala’s father",
-              "publications": []
+              "source": "Published as A. Vasudevan",
+              "publications": [
+                {
+                  "title": "Tuberculosis in Some Rare Situations, Namely Tonsils and Uterus",
+                  "venue": "Indian Medical Gazette · with K.G. Krishnaswamy and Amar Nath Goyle",
+                  "year": "1936",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5170590/"
+                },
+                {
+                  "title": "Epithelioma Adenoides Cysticum: Reports of Three Cases",
+                  "venue": "Indian Medical Gazette · with A.N. Goyle and K.G. Krishnaswami",
+                  "year": "1936",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5170435/"
+                },
+                {
+                  "title": "Ewing’s Sarcoma: A Clinical and Pathological Study of a Case",
+                  "venue": "Indian Medical Gazette · with Amar Nath Goyle and K.G. Krishnaswamy",
+                  "year": "1935",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5169804/"
+                },
+                {
+                  "title": "Tuberculosis of the Mammary Gland",
+                  "venue": "Indian Medical Gazette · with Amar Nath Goyle and K.G. Krishnaswamy",
+                  "year": "1935",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5169470/"
+                },
+                {
+                  "title": "An Unusual Form of Tuberculosis: Report of a Case",
+                  "venue": "Indian Medical Gazette · with A.N. Goyle and K.G. Krishnaswamy",
+                  "year": "1934",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5159027/"
+                },
+                {
+                  "title": "Gastric Syphilis",
+                  "venue": "Indian Medical Gazette · with E.W.C. Bradfield",
+                  "year": "1929",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5164319/"
+                },
+                {
+                  "title": "Primary Carcinoma of Liver in South India",
+                  "venue": "Journal of Pathology and Bacteriology, vol. 32, p. 342 · with P.N. Basu",
+                  "year": "1929"
+                },
+                {
+                  "title": "A Case of Rhinosporidiosis in a Female",
+                  "venue": "Journal of Laryngology and Otology, vol. 44, p. 518 · with P.V. Cherian",
+                  "year": "1929"
+                },
+                {
+                  "title": "Case report of a man knocked down by a motor bus (original title not found)",
+                  "venue": "With P.N. Basu, Madras General Hospital · noted in the Indian Medical Gazette’s review of 1928",
+                  "year": "1928",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5164775/"
+                },
+                {
+                  "title": "Mycetoma",
+                  "venue": "Indian Medical Gazette · with E.W.C. Bradfield",
+                  "year": "1927",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5197977/"
+                },
+                {
+                  "title": "Case of Sarcocystis infection in a man (original title not found)",
+                  "venue": "Indian Journal of Medical Research, July 1927 · noted in the Indian Medical Gazette’s review of 1927",
+                  "year": "1927",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5235841/"
+                }
+              ]
             },
             {
               "id": "singari",
@@ -1456,7 +1522,8 @@
                       "venue": "History of India in Telugu · Macmillan"
                     }
                   ],
-                  "note": "Historian, linguist and educationist (1863–1931). Principal of A.V.N. College, Visakhapatnam, and later Reader in Indian History and Archaeology at the University of Madras."
+                  "note": "Pillaipundagudi Thiruvengadattaiyangar Srinivasa Iyengar (1863–1931) was a historian, linguist and educationist whose books dealt largely with South Indian history. In the early twentieth century he led A.V.N. College in Visakhapatnam as principal and pressed for curricula that used spoken language. He founded a society to reform the teaching of Telugu in 1909, published an arithmetic textbook in modern Telugu in 1911, and in 1913 sat on a ten-member Madras University committee advising on the style of Telugu composition for the Intermediate Course. He was principal and professor of English at Rajahmundry Training College before becoming Reader in Indian History and Archaeology at the University of Madras, a post he held until his death.",
+                  "noteSource": { "label": "Based on Wikipedia", "url": "https://en.wikipedia.org/wiki/P._T._Srinivasa_Iyengar" }
                 }
               ]
             }

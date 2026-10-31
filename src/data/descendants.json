@@ -25,7 +25,44 @@
         "id": "vijayaraghavan",
         "name": "M.D. Vijayaraghavan",
         "role": "Eldest son · b. 1922",
-        "publications": [],
+        "source": "Published as M.D. Vijayaraghavan in India",
+        "publications": [
+          {
+            "title": "Techno-economics of phosphoric acid production",
+            "venue": "Paper read at the Fertiliser Association of India, Delhi, October 4, 1969 · reported in Technology, vol. 7 · as Director of Projects, Dorr-Oliver (India)",
+            "year": "1969",
+            "url": "https://archive.org/details/cftri.0114technologyvol70000snro"
+          },
+          {
+            "title": "Phosphoric acid and phosphatic fertiliser plants from maximum Indian engineering and manufacture",
+            "venue": "Proceedings of a 1966 seminar on the cost and financing of fertiliser projects in India, pp. 195–207",
+            "year": "1967",
+            "url": "https://archive.org/details/CAT10183112059"
+          },
+          {
+            "title": "Multi-stage bleaching for bamboo and bagasse pulp (rest of title not found)",
+            "venue": "With V.G. Desai · indexed in the International Sugar Journal, 1966",
+            "year": "1966",
+            "url": "https://archive.org/details/sim_international-sugar-journal_1966_68_index"
+          },
+          {
+            "title": "Gaps in the Facilities of Chemical Plant Design in the Country",
+            "venue": "First Get Together of Research and Industry · Dorr-Oliver (India), Bombay",
+            "year": "1965",
+            "url": "https://archive.org/details/cftri.43firstgettogether0000coun"
+          },
+          {
+            "title": "Paper on machinery of Indian manufacture (start of title not found)",
+            "venue": "United Nations, New York, 6 pages · catalogued with Dorr-Oliver (India)",
+            "year": "1962",
+            "url": "https://archive.org/details/nationalunioncat0049vari"
+          },
+          {
+            "title": "Project Cost Estimation in India: An Appraisal",
+            "venue": "Indian Chem. J., vol. 3, no. 6 · cited in the Encyclopedia of Chemical Processing and Design",
+            "url": "https://archive.org/details/encyclopediaofch0012unse"
+          }
+        ],
         "children": [
           {
             "id": "vanaja",

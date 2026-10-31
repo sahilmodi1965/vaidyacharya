@@ -39,11 +39,10 @@ const byYear = (pubs: any[]) => {
 };
 ---
 
-<Base title={site.name} description={family.intro}>
+<Base title={site.name} description="Family tree and publications.">
   <section class="page-head wrap">
     <span class="eyebrow">Family tree</span>
     <h1>{family.heading}</h1>
-    <p>{family.intro}</p>
   </section>
 
   <section class="tree-section">
@@ -69,7 +68,6 @@ const byYear = (pubs: any[]) => {
       </ul>
     </div>
     <p class="wrap scroll-hint">Scroll sideways to see the whole tree.</p>
-    <p class="wrap missing">{family.missing}</p>
   </section>
 
   {people.map((p) => (
@@ -301,11 +299,6 @@ const byYear = (pubs: any[]) => {
     .scroll-hint {
       display: block;
     }
-  }
-  .missing {
-    margin-top: 24px;
-    font-style: italic;
-    color: var(--muted);
   }
 </style>
 

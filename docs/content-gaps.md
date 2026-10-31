@@ -3,6 +3,8 @@
 What the rebuilt site is still missing, and what to ask Vivek Ragavan or Malavika Muralidharan for.
 Everything on the live site came from Wayback Machine copies of vaidyacharya.org (captures from April 2022 to August 2025). Nothing was written from scratch.
 
+The Works tab, its book entries and the Hamsa Sandesham PDF were later removed from the site at the trustee's request. They remain in git history, so the book items below apply only if they are brought back. The old Home page (portrait intro, titles, Welcome essay) was removed the same way, and the family tree is now the Home page.
+
 ## What was recovered
 
 | Item | Source capture |
@@ -54,6 +56,5 @@ From the old sitemap and menu. No copy of any of them exists in the Wayback Mach
   - "Editor of Vaiydya Kalannidhi"
   - "Vidyapitha" stands alone as the last title; it may be the end of another line
   - "Physician SKPD Hospital, Madras Sri Desika Dashana Dhurandhara" looks like two titles run together
-  - About: "…decided to establish the Vaidyacharya Trust with" ends a paragraph and "The express purpose of…" starts the next. It is probably one sentence.
   - Home: the heading reads "Pandit Duraiswami aiyangar (1883 -1956)"; the site capitalises the name in CSS but leaves the text alone
 - [ ] **TODO: the old PDF URL.** Links to `/wp-content/uploads/2020/12/Hamsasandesa-Complete-Translation_compressed1.pdf` will 404 on the new site. If anyone shared that link, add a host-level redirect to `/pdf/hamsa-sandesham-english-translation.pdf` at launch.

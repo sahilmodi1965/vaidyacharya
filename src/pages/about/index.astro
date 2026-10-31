@@ -8,14 +8,10 @@ import { img } from '../../lib/images';
 const { about } = content;
 ---
 
-<Base title="About" description={about.story[0].replace(/<[^>]+>/g, '')}>
+<Base title="About" description="The trustees and other major contributors.">
   <section class="page-head wrap">
     <span class="eyebrow">About the Trust</span>
     <h1>{about.storyHeading}</h1>
-  </section>
-
-  <section class="wrap prose story">
-    {about.story.map((p) => <p set:html={p} />)}
   </section>
 
   <section class="section">
@@ -42,9 +38,6 @@ const { about } = content;
 </Base>
 
 <style>
-  .story {
-    padding-bottom: clamp(32px, 6vw, 64px);
-  }
   .person {
     display: grid;
     gap: 20px 40px;

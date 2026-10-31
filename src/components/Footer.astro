@@ -5,7 +5,6 @@ import { site, nav } from '../lib/site';
 
 <footer class="site-footer">
   <div class="wrap row">
-    <p class="copy">© {site.name}</p>
     <ul>
       {nav.map((n) => <li><a href={link(n.href)}>{n.label}</a></li>)}
       <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
@@ -27,11 +26,6 @@ import { site, nav } from '../lib/site';
     justify-content: space-between;
     gap: 8px 32px;
     padding-block: 28px;
-  }
-  .copy {
-    margin: 0;
-    font-family: var(--font-display);
-    font-size: var(--step-0);
   }
   ul {
     display: flex;

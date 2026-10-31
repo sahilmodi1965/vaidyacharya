@@ -65,8 +65,8 @@ if (hasInlaws && person.spouse.parentsSide === 'left') pair.reverse();
               </button>
               {(p.biography || p.bibliography) && (
                 <span class="box-links">
-                  {p.biography && <a class="bio-link" href={link('/descendants/#biography')} data-panel="biography" aria-haspopup="dialog">Biography</a>}
-                  {p.bibliography && <a class="bio-link" href={link('/descendants/#publications')} data-panel="publications" aria-haspopup="dialog">Publications</a>}
+                  {p.biography && <a class="bio-link" href={link('/#biography')} data-panel="biography" aria-haspopup="dialog">Biography</a>}
+                  {p.bibliography && <a class="bio-link" href={link('/#publications')} data-panel="publications" aria-haspopup="dialog">Publications</a>}
                 </span>
               )}
             </div>

@@ -4,14 +4,14 @@ import content from '../../data/content.json';
 import { site } from '../../lib/site';
 ---
 
-<Base title="Contact" description={`Write to the Vaidyacharya Trust at ${site.email}.`}>
+<Base title="Contact" description={`Write to us at ${site.email}.`}>
   <section class="page-head wrap">
     <span class="eyebrow">Contact</span>
     <h1>{content.contact.heading}</h1>
   </section>
   <section class="wrap">
     <div class="card">
-      <p class="label">Email the {site.name}</p>
+      <p class="label">Email us</p>
       <p class="mail"><a href={`mailto:${site.email}`}>{site.email}</a></p>
       <a class="btn solid" href={`mailto:${site.email}`}>Write to us</a>
     </div>
